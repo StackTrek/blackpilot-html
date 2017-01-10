@@ -71,6 +71,7 @@
       }
     }
     .tab-content{
+      position: relative;
       .tab-pane{
         padding: 20px 20px 60px 20px;
       }
@@ -118,7 +119,53 @@
           }
         }
       }
-    }
+      .get-more-apps{
+        position: absolute;
+        bottom: 73px;
+        right: 0px;
+        .more-card{
+          padding-left: 100px;
+          position: relative;
+          .more-icon{
+            position: absolute;
+            border: 10px solid #f8f8f8;
+            background-color: #f8f8f8;
+            right: 0;
+            top: 22px;
+            border-radius: 50%;
+            a {
+              i{
+                color: #3e3e3e;
+                background-color: #fff;
+                font-size: 40px;
+                padding: 10px 13px 10px 13px;
+                border: 1px solid $grey;
+                border-radius: 50%;
+              }
+            }
+          } //more-icon
+          .more-details{
+            padding-right: 20px;
+            h3{
+              font-size: 20px;
+            }
+            p{
+              font-size: 12px;
+              color: #626262;
+            }
+          }
+        }
+
+        .more-details{
+          // text-align: right;
+          // padding-top: 0px;
+          // margin-left: 50px;
+          // p{
+          //   width: 50%;
+          // }
+        }
+      }
+    } // tab-content
   } //apps-link
 } //apps
 
@@ -229,11 +276,31 @@
 // }
 .app-card{
   position: relative;
-  border: 1px solid $light-grey;
+  border: 1px solid #e8e8e8;
   margin: 5px;
   height: 77px;
   .icon-environmen-white{
+    background-color: $purple;
+    position: absolute;
+  }
+  .icon-globe-white{
     background-color: $red;
+    position: absolute;
+  }
+  .icon-product-white{
+    background-color: $pink;
+    position: absolute;
+  }
+  .icon-money-white{
+    background-color: $cyan;
+    position: absolute;
+  }
+  .icon-plane-white{
+    background-color: $red;
+    position: absolute;
+  }
+  .icon-stat-white{
+    background-color: $pink;
     position: absolute;
   }
   .app-details{
@@ -251,6 +318,8 @@
     .config-text{
       // display: none;
       border: 1px solid $grey;
+      border-radius: 5px;
+      background-color: $grey;
       padding: 5px;
       position: absolute;
       top: -30px;
@@ -258,18 +327,26 @@
       background-color: #fff;
       font-size: 9px;
       color: $grey;
+      i{
+        border: none;
+        -webkit-text-stroke: 1px $grey;
+        color: #fff;
+        top: 12px;
+        font-size: 20px;
+      }
     }
     i{
       font-size: 10px;
       padding: 3px;
-      border: 1px solid $grey;
-      color: $grey;
+      border: 1px solid #dde0e3;
+      color: #dde0e3;
       position: absolute;
       top: 3px;
       right: 3px;
     }
   }
-}
+} //app-card
+
 
 
 
