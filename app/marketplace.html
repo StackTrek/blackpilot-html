@@ -1,0 +1,494 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gulp Starter Kit</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+    <!-- build:js js/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+
+  <body>
+      <!--[if lt IE 10]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+<section class="dashboard">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 bg-dash-menu clear-pad">
+        <div class="logo">
+          <img src="img/icon-black.png" alt="">
+        </div>
+        <div class="side-menu">
+          <div class="list-group">
+            <a href="javascript:void(0)" class="list-group-item">
+              <i class="fa fa-list-alt" aria-hidden="true"></i>
+              <i class="fa fa-plus-circle i-float" aria-hidden="true"></i>
+              New Process
+            </a>
+            <a href="dashboard.html" class="list-group-item">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              Dashboard
+            </a>
+            <a href="marketplace.html" class="list-group-item active">
+              <i class="fa fa-credit-card" aria-hidden="true"></i>
+              Marketplace
+            </a>
+            <a href="javascript:void(0)" class="list-group-item">
+              <i class="fa fa-file-o" aria-hidden="true"></i>
+              Portal Management
+            </a>
+            <a href="javascript:void(0)" class="list-group-item">
+              <i class="fa fa-comments-o" aria-hidden="true"></i>
+              Help &amp; Support
+            </a>
+          </div>
+        </div>
+      </div> <!-- left column -->
+      <div class="col-lg-10 clear-pad">
+        <div class="top-menu">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="profile">
+                <div class="pic">
+                  <img src="img/icon-black.png" class="img-responsive" alt="">
+                </div>
+                <div class="name">
+                  John Doe
+                </div>
+                <div class="position">
+                  Founder
+                </div>
+
+              </div> <!-- profile -->
+              <a href="javascript:void(0)"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-lg-7 clear-pad">
+              <div class="form-link">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search Resources">
+                    <div class="input-group-btn">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <ul class="nav navbar-nav">
+                <li><a href="javascript:void(0)"><i class="fa fa-bell" aria-hidden="true"></i><span class="badge">1</span></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div> <!-- top menu -->
+        <!-- top info -->
+          <div class="col-lg-12">
+            <div class="row info">
+              <div class="col-lg-6">
+                <div class="left-info">
+                  <ol class="breadcrumb">
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li class="active"><a href="javascript:void(0)">Marketplace</a></li>
+                  </ol>
+                  <h1>BlackPilot Marketplace</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reiciendis.</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="right-info">
+                  <h3>Get BlackPilot Training and Education</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ullam natus adipisci explicabo vero delectus, tenetur totam iste est libero.</p>
+                  <a href="javascript:void(0)" class="btn btn-small bg-trans">LEARN MORE <i class="fa fa-plus pull-right" aria-hidden="true"></i></a>
+                  <a href="javascript:void(0)" class="dismiss">DISMISS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- top info -->
+        <div class="col-lg-12">
+          <div class="row apps">
+            <div class="apps-link">
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Marketplace</a></li>
+                <li><a data-toggle="tab" href="#menu1">Installed Apps</a></li>
+                <li><a data-toggle="tab" href="#menu2">Available Updates</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                  <div class="row">
+                    <div class="col-md-5 left-tab-info">
+                      <h3>App Categories</h3>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="col-md-7 left-tab-info">
+                      <form action="">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" placeholder="Search your Apps" class="form-control" id="email">
+                                <span class = "input-group-addon"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" placeholder="Sort Alphabetically" class="form-control" id="email">
+                                <span class = "input-group-addon"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></span>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div> <!-- first-row -->
+                  <div class="row">
+                    <div class="app-category flex-grid">
+                      <div class="card">
+                        <div class="card-icon">
+                          <i class="fa fa-cog" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-dot red">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-details">
+                          <h3 class="card-title">Manufacturing</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS <i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-icon">
+                          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-dot green">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-details">
+                          <h3 class="card-title">Quality Management</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-icon">
+                          <i class="fa fa-link" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-dot purple">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-details">
+                          <h3 class="card-title">Supply Chain Management</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-icon">
+                          <i class="fa fa-calculator" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-dot pink">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-details">
+                          <h3 class="card-title">Financial</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-icon">
+                          <i class="fa fa-volume-up" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-dot cyan">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-details">
+                          <h3 class="card-title">Marketing</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </div>
+
+                    </div> <!-- flex-grid -->
+                    <div class="app-category flex-grid">
+                      <div class="card">
+                        <div class="card-icon">
+                          <i class="fa fa-line-chart" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-dot yellow">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-details">
+                          <h3 class="card-title">Sales</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS <i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-icon">
+                          <i class="fa fa-money" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-dot cyan">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-details">
+                          <h3 class="card-title">Purchasing &amp; Procurement</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS <i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-icon">
+                          <i class="fa fa-television" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-dot teal">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-details">
+                          <h3 class="card-title">E-Commerce</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS <i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-icon">
+                          <i class="fa fa-area-chart" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-dot orange">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-details">
+                          <h3 class="card-title">Sustainability</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS <i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-icon">
+                          <i class="fa fa-user aria-hidden="true"></i>
+                        </div>
+                        <div class="card-dot yellow-green">
+                          <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-details">
+                          <h3 class="card-title">Human capital</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS <i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                    </div> <!-- flex-grid -->
+                  </div>
+                </div> <!-- home -->
+                <div id="menu1" class="tab-pane fade">
+                  <div class="row">
+                    <div class="col-md-6 left-tab-info">
+                      <h3>My Apps</h3>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="col-md-6 left-tab-info">
+                      <form action="">
+                        <div class="col-md-7">
+                          <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" placeholder="Search your Apps" class="form-control" id="email">
+                                <span class = "input-group-addon"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <a href="javascript:void(0)" class="btn btn-std bg-blue">GET MORE APPLICATION <i class="fa fa-plus" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div> <!-- first row -->
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="side-sub-menu">
+                        <div class="list-group">
+                          <a href="#" class="list-group-item active">
+                            <i class="fa fa-stop grey" aria-hidden="true"></i>
+                            Display All
+                          </a>
+                          <a href="#" class="list-group-item">
+                            <i class="fa fa-stop red" aria-hidden="true"></i>
+                            Marketing
+                          </a>
+                          <a href="#" class="list-group-item">
+                            <i class="fa fa-stop green" aria-hidden="true"></i>
+                            Manufacturing
+                          </a>
+                          <a href="#" class="list-group-item">
+                            <i class="fa fa-stop purple" aria-hidden="true"></i>
+                            Sustainability
+                          </a>
+                          <a href="#" class="list-group-item">
+                            <i class="fa fa-stop pink" aria-hidden="true"></i>
+                            Supply Chain Management
+                          </a>
+                          <a href="#" class="list-group-item">
+                            <i class="fa fa-stop cyan" aria-hidden="true"></i>
+                            Financial
+                          </a>
+                          <a href="#" class="list-group-item">
+                            <i class="fa fa-stop yellow" aria-hidden="true"></i>
+                            Human Capital
+                          </a>
+                          <a href="#" class="list-group-item disable">
+                            <i class="fa fa-stop off-white" aria-hidden="true"></i>
+                            Sales
+                          </a>
+                          <a href="#" class="list-group-item disable">
+                            <i class="fa fa-stop off-white" aria-hidden="true"></i>
+                            Purchasing &amp; Procurement
+                          </a>
+                          <a href="#" class="list-group-item disable">
+                            <i class="fa fa-stop off-white" aria-hidden="true"></i>
+                            E-commerse
+                          </a>
+                          <a href="#" class="list-group-item disable">
+                            <i class="fa fa-stop off-white" aria-hidden="true"></i>
+                            Quality Management
+                          </a>
+                        </div>
+                      </div>
+                    </div> <!-- first col -->
+                    <div class="col-lg-9">
+                      <div class="flex-grid app-grid">
+                        <div class="flex-card app-card">
+                          <div class="app-icon">
+                            <div class="icon-environmen-white"></div>
+                          </div>
+                          <div class="app-details">
+                            <h3>Holiday Request</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="config">
+                            <div class="config-text">Configure Process</div>
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                          </div>
+                        </div>
+
+                        <div class="flex-card app-card">
+                          <div class="app-icon">
+                            <div class="icon-environmen-white"></div>
+                          </div>
+                          <div class="app-details">
+                            <h3>Holiday Request</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="config">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                          </div>
+                        </div>
+
+                        <div class="flex-card app-card">
+                          <div class="app-icon">
+                            <div class="icon-environmen-white"></div>
+                          </div>
+                          <div class="app-details">
+                            <h3>Holiday Request</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="config">
+                            <a href="javascript:void(0)"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div><!-- app-grid -->
+                    </div><!-- enc col -->
+                  </div><!-- 2nd row -->
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <h3>Menu 2</h3>
+                  <p>Sed ut perspiciatis unde omnis iste natus.</p>
+                </div>
+              </div>
+            </div> <!-- apps-link -->
+          </div>
+        </div>
+      </div> <!-- right column -->
+    </div>
+  </div>
+</section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 side-foot">&nbsp;</div>
+        <div class="col-lg-10 foot-wrap">
+          <div class="col-lg-4 copy">
+              Copyright &copy;2014 BlackPilot. All Rights Reserved
+            </div>
+            <div class="col-lg-8 links">
+              <ul class="nav navbar-nav">
+                <li><a href="javascript:void(0)">About Us</a></li>
+                <li><a href="javascript:void(0)">Help</a></li>
+                <li><a href="javascript:void(0)">Contact</a></li>
+                <li><a href="javascript:void(0)">Fees</a></li>
+                <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+                <li><a href="javascript:void(0)">Privacy</a></li>
+                <li><a href="javascript:void(0)">Legal</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+
+  </script>
+
+  <!-- build:js js/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js js/plugins.js -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js js/main.js -->
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
+</body>
+
