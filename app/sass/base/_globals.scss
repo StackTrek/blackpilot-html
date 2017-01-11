@@ -65,7 +65,7 @@ a{
     color: $btn-text;
   }
 }
-.btn-tbl{
+.btn-open{
   width: 100%;
   font-family: $font;
   font-size: 12px;
@@ -76,6 +76,20 @@ a{
   &:hover{
     background-color: $navi!important;
     color: $btn-text;
+  }
+}
+.btn-del{
+  width: 100%;
+  font-family: $font;
+  font-size: 12px;
+  padding: 3px 5px 3px 5px;
+  // background-color: #f4f4f4;
+  border: 1px solid #c04a48!important;
+  color: #fff;
+  &:hover{
+    background-color: $navi!important;
+    color: $btn-text;
+    border: 1px solid $navi!important;
   }
 }
 .btn-small{
@@ -105,6 +119,9 @@ a{
 }
 .bg-violet{
   background-color: $main;
+}
+.bg-red{
+  background-color: #c04a48;
 }
 .bg-grey{
   background-color: #f4f4f4;
