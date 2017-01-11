@@ -7,6 +7,17 @@
     background-color: $navi;
     height: 100%;
   }
+.main-content{
+  padding-top: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+} //end main-content
+.block{
+  background-color: #fff;
+  margin: 50px;
+  padding: 26px 23px 26px 23px;
+  box-shadow: 1px 3px 16px $light-grey;
+}
 .center{
   display: block;
   margin-right: auto;
@@ -54,9 +65,22 @@ a{
     color: $btn-text;
   }
 }
+.btn-tbl{
+  width: 100%;
+  font-family: $font;
+  font-size: 12px;
+  padding: 3px 5px 3px 5px;
+  // background-color: #f4f4f4;
+  border: 1px solid #979ba0!important;
+  color: #5a636d;
+  &:hover{
+    background-color: $navi!important;
+    color: $btn-text;
+  }
+}
 .btn-small{
   position: relative;
-  width: 40%;
+  width: 31%;
   border: 1px solid $blue;
   color: $blue!important;
   text-align: left;
@@ -82,7 +106,9 @@ a{
 .bg-violet{
   background-color: $main;
 }
-
+.bg-grey{
+  background-color: #f4f4f4;
+}
 .bg-blue{
   background-color: $blue;
 }
@@ -152,3 +178,167 @@ a{
     border-radius: 0px;
   }
 
+//side menu and top menu
+  .bg-dash-menu{
+    background-color: $navi;
+    height: 100%;
+  }
+  .logo {
+    padding: 12px;
+    width: 100%;
+    height: 70px;
+    background-color: $bg-logo;
+    img{
+      @extend .center;
+      padding: 2px;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 40px;
+    }
+  } //logo
+
+  .side-menu{
+    background-color: $navi;
+    // height: 100%!important;
+    @media (min-width: 1200px){
+      min-height: 800px;
+      max-height: 1000px!important;
+      height: 1000px!important;
+    }
+
+      .list-group {
+        a {
+          padding-left: 70px;
+          position: relative;
+          i {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 20px;
+            margin-right: 13px;
+          }
+          .i-float{
+            position: absolute;
+            top: 30px;
+            left: 33px;
+            font-size: 10px;
+            color: $navi-font;
+            background-color: $navi;
+            border-radius: 50%;
+          }
+        }
+      }
+      .active{
+          background-color: $dash-bg!important;
+          border-left: 5px solid $bg-logo!important;
+          .i-float{
+            background-color: #fff;
+          }
+        }
+      .list-group-item{
+        background-color: transparent;
+        border: none;
+        border-radius: 0px;
+        border-left: 5px solid transparent;
+        color: $navi-font;
+        padding: 20px;
+
+        &:hover, .active{
+          background-color: $dash-bg;
+          border-left: 5px solid $bg-logo!important;
+          .i-float{
+            background-color: #fff;
+          }
+        }
+      }
+  } // side-menu
+
+  .top-menu{
+    position: relative;
+    // @extend .center-top;
+    padding: 14px 22px 14px 22px;
+    background-color: $navi;
+    height: 70px;
+    img{
+      padding: 2px;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 35px;
+    }
+
+    .profile {
+      color: #7c8c94;
+      .pic{
+        float: left;
+        margin-right: 13px;
+      }
+      .name {
+        font-weight: bold;
+      }
+      .position{
+        // float: left;
+      }
+    }
+    .form-link {
+      float: right;
+      .form-group{
+        // float: right;
+        margin-top: 0px;
+        input {
+          height: 40px;
+          border-radius: 5px;
+        }
+        &:nth-child(1){
+          float: left;
+        }
+        &:nth-child(2){
+          // margin-left: 30px;
+          float: left;
+        }
+      }
+    }
+    ul {
+      color: #7c8c94;
+      text-align: center;
+      li {
+        text-align: center;
+        a {
+          font-size: 20px;
+          padding: 23px;
+          .badge{
+            padding: 2px 5px;
+            position: absolute;
+            border: 2px solid $navi;
+            top: 0px;
+            left: 38px;
+            background-color: #fb434a;
+            font-size: 10px;
+          }
+          &:nth-child(2){
+            padding-right: 15px;
+            padding-left: 15px;
+          }
+          i {
+            font-size: 17px;
+          }
+          &:hover, &:active, &:focus{
+            background-color: transparent;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    a {
+      i {
+        position: absolute;
+        top: 9px;
+        right: 0;
+        color: #a8bec9;
+        font-size: 23px;
+      }
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  } // top-menu

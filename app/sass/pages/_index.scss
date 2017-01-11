@@ -1,0 +1,32 @@
+.login-box{
+  margin-top: 160px;
+  box-shadow: 1px 3px 16px $light-grey;
+  @media (min-width: 320px) and (max-width: 1023px){
+    margin-top: 0px;
+  }
+  padding: 50px 60px 50px 60px;
+  @include centerer(true, false);
+  background-color: $login-box;
+  font-size: 12px;
+
+  img{
+    @extend .center;
+  }
+
+   a{
+    // color: $btn-text;
+    i{
+      margin-right: 13px;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 11px;
+    color: $light-grey;
+    a {
+      color: $main!important;
+    }
+  }
+} //login-box
+
+

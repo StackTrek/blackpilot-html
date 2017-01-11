@@ -46,7 +46,8 @@ $icon-font-path: '../fonts/';
 
 /*-----PAGES-------
 -----------------------*/
+@import "pages/index";
 @import "pages/home";
-@import "pages/dashboard";
 @import "pages/marketplace";
+@import "pages/dashboard";
 

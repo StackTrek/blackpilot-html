@@ -26,7 +26,7 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
-<section class="dashboard">
+<section class="marketplace">
   <div class="container">
     <div class="row">
       <div class="col-lg-2 bg-dash-menu clear-pad">
@@ -482,7 +482,7 @@
                   </div>
                 </div> <!-- installed apps -->
                 <div id="updates" class="tab-pane fade">
-                  <h3>Menu 2</h3>
+                  <h3>Available Updates</h3>
                   <p>Sed ut perspiciatis unde omnis iste natus.</p>
                 </div>
               </div>
@@ -525,6 +525,7 @@
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/chart.js/dist/Chart.js"></script>
     <!-- endbower -->
   <!-- endbuild -->
 
@@ -546,5 +547,101 @@
   <!-- build:js js/main.js -->
   <script src="js/main.js"></script>
   <!-- endbuild -->
+
+  <!-- chart -->
+  <script>
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["Jan 1 - Mon", "Jan 2 - Tue", "Jan 3 - Wed", "Jan 4 - Thu", "Jan 5 - Fri", "Jan 6 - Sat", "Jan 8 - Sun"],
+            datasets: [
+                {
+                  type: 'bar',
+                  label: 'John Doe',
+                  backgroundColor: [
+                      'rgba(255, 132, 158, 0.8)',
+                      'rgba(255, 132, 158, 0.8)',
+                      'rgba(255, 132, 158, 0.8)',
+                      'rgba(255, 132, 158, 0.8)',
+                      'rgba(255, 132, 158, 0.8)',
+                      'rgba(255, 132, 158, 0.8)',
+                      'rgba(255, 132, 158, 0.8)'
+                  ],
+                  borderColor: [
+                      'rgba(255, 128, 155,1)',
+                      'rgba(255, 128, 155, 1)',
+                      'rgba(255, 128, 155, 1)',
+                      'rgba(255, 128, 155, 1)',
+                      'rgba(255, 128, 155, 1)',
+                      'rgba(255, 128, 155, 1)',
+                      'rgba(255, 128, 155, 1)'
+                  ],
+                  borderWidth: 1,
+                  data: [10, 20, 30, 5, 13, 25, 23],
+                },
+                {
+                  type: 'bar',
+                  label: 'Mark Nirew',
+                  data: [12, 18, 29, 30, 12, 24, 12],
+                  backgroundColor: [
+                      'rgba(252, 214, 122, 0.8)',
+                      'rgba(252, 214, 122, 0.8)',
+                      'rgba(252, 214, 122, 0.8)',
+                      'rgba(252, 214, 122, 0.8)',
+                      'rgba(252, 214, 122, 0.8)',
+                      'rgba(252, 214, 122, 0.8)',
+                      'rgba(252, 214, 122, 0.8)'
+                  ],
+                  borderColor: [
+                      'rgba(251, 200, 80,1)',
+                      'rgba(251, 200, 80, 1)',
+                      'rgba(251, 200, 80, 1)',
+                      'rgba(251, 200, 80, 1)',
+                      'rgba(251, 200, 80, 1)',
+                      'rgba(251, 200, 80, 1)',
+                      'rgba(251, 200, 80, 1)'
+                  ],
+                  borderWidth: 1,
+                },
+                {
+                  type: 'bar',
+                  label: 'Alden Williams',
+                  data: [9, 21, 28, 18, 29, 30, 24],
+                  backgroundColor: [
+                      'rgba(75, 192, 192, 0.8)',
+                      'rgba(75, 192, 192, 0.8)',
+                      'rgba(75, 192, 192, 0.8)',
+                      'rgba(75, 192, 192, 0.8)',
+                      'rgba(75, 192, 192, 0.8)',
+                      'rgba(75, 192, 192, 0.8)',
+                      'rgba(75, 192, 192, 0.8)'
+                  ],
+                  borderColor: [
+                      'rgba(60, 170, 170,1)',
+                      'rgba(60, 170, 170, 1)',
+                      'rgba(60, 170, 170, 1)',
+                      'rgba(60, 170, 170, 1)',
+                      'rgba(60, 170, 170, 1)',
+                      'rgba(60, 170, 170, 1)',
+                      'rgba(60, 170, 170, 1)'
+                  ],
+                  borderWidth: 1,
+                  // data: [65, 59, 80, 81, 56, 55, 40,1000],
+                }
+            ]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+  </script>
+  <!-- end chart -->
 </body>
 

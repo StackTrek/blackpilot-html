@@ -1,359 +1,362 @@
-.active{
-      color: $blue!important;
-    }
 .info{
-  p{
-    font-size: 12px;
-  }
-  .left-info{
-    h1{
-      font-size: 25px;
+    p{
+      font-size: 12px;
     }
-    .breadcrumb{
-      li {
-        a{
-          font-size: 11px;
-          color: #666666;
-          &:hover{
-            color: $blue;
+    .left-info{
+      h1{
+        font-size: 25px;
+      }
+      .breadcrumb{
+        background-color: transparent;
+        li {
+          a{
+            font-size: 11px;
+            color: #666666;
+            &:hover{
+              color: $blue!important;
+            }
           }
         }
-      }
-      .active{
-        color: $blue!important;
-      }
-    }
-  }
-  .right-info{
-    .dismiss {
-      font-size: 10px;
-      color: #555;
-      &:nth-child(4){
-        margin-left: 20px;
-      }
-    }
-    h3{
-      font-size: 18px;
-    }
-  }
-}//info
-
-.apps{
-  background-color: #fff;
-  margin: 50px;
-
-  .apps-link{
-    .nav-tabs{
-      li {
-        background-color: #f8f8f8;
-        border-top: 1px solid #dee0e3;
-        border-right: 1px solid #dee0e3;
-        border-radius: 0px;
-
-        a {
-          color: $dark-grey;
-          margin: 0px;
-          &:hover{
-            border-bottom: none;
-          }
-        }
-      }
-      .active{
-        li{
-          border-radius: 0px;
-        }
-        a{
-          border-radius: 0px;
-          border-top: 4px solid #ddd;
-          border-bottom:0px;
-          border-left: 0px;
+        .active{
+          color: $blue!important;
         }
       }
     }
-    .tab-content{
-      position: relative;
-      .tab-pane{
-        padding: 20px 20px 60px 20px;
+    .right-info{
+      .dismiss {
+        font-size: 10px;
+        color: #555;
+        &:nth-child(4){
+          margin-left: 20px;
+        }
       }
       h3{
-        font-size: 20px;
-        color: #333;
-        margin-bottom: 5px;
+        font-size: 18px;
       }
-      p{
-        font-size: 12px;
-        color: #333;
+    }
+  }//info
+.marketplace{
+    .active{
+        color: $blue!important;
       }
-      .left-tab-info{
-        a{
-          text-align: left;
-          font-size: 10px;
-          i {
-            position: absolute;
-            top: 53%;
-            right: 11%;
-          }
-        }
-      }
-      //input
-      form{
-        float: right;
-        .form-group{
-          span {
-            background-color: #f7f7f7;
-            a{
-              color: #999fa5;
+
+
+  .apps{
+    background-color: #fff;
+    margin: 50px;
+    box-shadow: 1px 3px 16px $light-grey;
+
+    .apps-link{
+      .nav-tabs{
+        li {
+          background-color: #f8f8f8;
+          border-top: 1px solid #dee0e3;
+          border-right: 1px solid #dee0e3;
+          border-radius: 0px;
+
+          a {
+            color: $dark-grey;
+            margin: 0px;
+            &:hover{
+              border-bottom: none;
             }
           }
-          input{
-            font-size: 12px;
-
-            width: 100%;
-            border-top-left-radius: 3px;
-            border-bottom-left-radius: 3px;
-            border-color: #dee0e3;
+        }
+        .active{
+          li{
+            border-radius: 0px;
           }
-          input[type=text]{
-            height: 37px;
-            background-color: $input-bg;
+          a{
+            border-radius: 0px;
+            border-top: 4px solid #ddd;
+            border-bottom:0px;
+            border-left: 0px;
           }
         }
       }
-      .get-more-apps{
-        position: absolute;
-        bottom: 73px;
-        right: 0px;
-        .more-card{
-          padding-left: 100px;
-          position: relative;
-          .more-icon{
-            position: absolute;
-            border: 10px solid #f8f8f8;
-            background-color: #f8f8f8;
-            right: 0;
-            top: 22px;
-            border-radius: 50%;
-            a {
-              i{
-                color: #3e3e3e;
-                background-color: #fff;
-                font-size: 40px;
-                padding: 10px 13px 10px 13px;
-                border: 1px solid $grey;
-                border-radius: 50%;
+      .tab-content{
+        position: relative;
+        .tab-pane{
+          padding: 20px 20px 60px 20px;
+        }
+        h3{
+          font-size: 20px;
+          color: #333;
+          margin-bottom: 5px;
+        }
+        p{
+          font-size: 12px;
+          color: #333;
+        }
+        .left-tab-info{
+          a{
+            text-align: left;
+            font-size: 10px;
+            i {
+              position: absolute;
+              top: 53%;
+              right: 11%;
+            }
+          }
+        }
+        //input
+        form{
+          float: right;
+          .form-group{
+            span {
+              background-color: #f7f7f7;
+              a{
+                color: #999fa5;
               }
             }
-          } //more-icon
-          .more-details{
-            padding-right: 20px;
-            h3{
-              font-size: 20px;
-            }
-            p{
+            input{
               font-size: 12px;
-              color: #626262;
+
+              width: 100%;
+              border-top-left-radius: 3px;
+              border-bottom-left-radius: 3px;
+              border-color: #dee0e3;
+            }
+            input[type=text]{
+              height: 37px;
+              background-color: $input-bg;
             }
           }
         }
+        .get-more-apps{
+          position: absolute;
+          bottom: 73px;
+          right: 0px;
+          .more-card{
+            padding-left: 100px;
+            position: relative;
+            .more-icon{
+              position: absolute;
+              border: 10px solid #f8f8f8;
+              background-color: #f8f8f8;
+              right: 0;
+              top: 22px;
+              border-radius: 50%;
+              a {
+                i{
+                  color: #3e3e3e;
+                  background-color: #fff;
+                  font-size: 40px;
+                  padding: 10px 13px 10px 13px;
+                  border: 1px solid $grey;
+                  border-radius: 50%;
+                }
+              }
+            } //more-icon
+            .more-details{
+              padding-right: 20px;
+              h3{
+                font-size: 20px;
+              }
+              p{
+                font-size: 12px;
+                color: #626262;
+              }
+            }
+          }
 
-        .more-details{
-          // text-align: right;
-          // padding-top: 0px;
-          // margin-left: 50px;
-          // p{
-          //   width: 50%;
-          // }
+          .more-details{
+            // text-align: right;
+            // padding-top: 0px;
+            // margin-left: 50px;
+            // p{
+            //   width: 50%;
+            // }
+          }
+        }
+      } // tab-content
+    } //apps-link
+  } //apps
+
+  .flex-grid{
+    display: flex;
+    // flex-wrap: wrap;
+  }
+  .flex-card{
+    flex: 1;
+  }
+  .app-category{
+    text-align: center;
+  }
+  .card{
+    position: relative;
+    margin: 5px;
+    border: 1px solid transparent;
+    padding: 30px 10px 30px 10px;
+    &:hover{
+      border: 1px solid #dadada;
+      background-color: #f8f8f8;
+      .card-icon{
+        background-color: transparent;
+        i {
+          background-color: #fff;
         }
       }
-    } // tab-content
-  } //apps-link
-} //apps
-
-.flex-grid{
-  display: flex;
-  // flex-wrap: wrap;
-}
-.flex-card{
-  flex: 1;
-}
-.app-category{
-  text-align: center;
-}
-.card{
-  position: relative;
-  margin: 5px;
-  border: 1px solid transparent;
-  padding: 30px 10px 30px 10px;
-  &:hover{
-    border: 1px solid #dadada;
-    background-color: #f8f8f8;
+    }
     .card-icon{
-      background-color: transparent;
-      i {
-        background-color: #fff;
-      }
-    }
-  }
-  .card-icon{
-    @include centerer(true, false);
-    border: 10px solid #f8f8f8;
-    background-color: #f8f8f8;
-    padding: 0px;
-    margin: 0px;
-    border-radius: 50%;
-    i{
-      background-color: #fff;
+      @include centerer(true, false);
+      border: 10px solid #f8f8f8;
+      background-color: #f8f8f8;
+      padding: 0px;
       margin: 0px;
-      color: #414141;
-      border: 1px solid #eaeaea;
       border-radius: 50%;
-      font-size: 40px;
-      padding: 15px 18px 15px 18px;
-    }
-  }
-  .card-dot{
-    position: absolute;
-    top: 90px;
-    left: 113px;
-  }
-  .card-details{
-    padding-top: 90px;
-    .card-title{
-      font-size: 13px!important;
-    }
-    p{
-      color: #626262;
-      font-size: 10px!important;
-    }
-    a{
-      text-align: left;
-      position: relative;
-      font-size: 8px!important;
       i{
-        position: absolute;
-        top: 35%;
-        right: 5%;
+        background-color: #fff;
+        margin: 0px;
+        color: #414141;
+        border: 1px solid #eaeaea;
+        border-radius: 50%;
+        font-size: 40px;
+        padding: 15px 18px 15px 18px;
       }
     }
-  }
-} //card
-.side-sub-menu{
-  .list-group{
-    border-radius: 0px!important;
-    .list-group-item{
-      font-size: 12px;
-      border-radius: 0px;
-      background-color: #fff;
-      // border-left: 1px solid transparent;
-      i{
-        margin-right: 20px;
+    .card-dot{
+      position: absolute;
+      top: 90px;
+      left: 113px;
+    }
+    .card-details{
+      padding-top: 90px;
+      .card-title{
+        font-size: 13px!important;
       }
-      &:hover{
+      p{
+        color: #626262;
+        font-size: 10px!important;
+      }
+      a{
+        text-align: left;
+        position: relative;
+        font-size: 8px!important;
+        i{
+          position: absolute;
+          top: 35%;
+          right: 5%;
+        }
+      }
+    }
+  } //card
+  .side-sub-menu{
+    .list-group{
+      border-radius: 0px!important;
+      .list-group-item{
+        font-size: 12px;
+        border-radius: 0px;
+        background-color: #fff;
+        // border-left: 1px solid transparent;
+        i{
+          margin-right: 20px;
+        }
+        &:hover{
+          background-color: #f9f9f9;
+          border-color: #ddd;
+          color: $grey!important;
+          border-left: 3px solid $blue;
+          i{
+            color: $grey!important;
+          }
+        }
+    }
+      .active{
         background-color: #f9f9f9;
         border-color: #ddd;
         color: $grey!important;
         border-left: 3px solid $blue;
+      }
+      .disable{
+        border-color: #ddd;
+        color: $off-white!important;
+        // border-left: 3px solid transparent;
+      }
+    }
+  } //side-sub-menu
+
+  // .app-grid{
+  // }
+  .app-card{
+    position: relative;
+    border: 1px solid #e8e8e8;
+    margin: 5px;
+    height: 77px;
+    .icon-environmen-white{
+      background-color: $purple;
+      position: absolute;
+    }
+    .icon-globe-white{
+      background-color: $red;
+      position: absolute;
+    }
+    .icon-product-white{
+      background-color: $pink;
+      position: absolute;
+    }
+    .icon-money-white{
+      background-color: $cyan;
+      position: absolute;
+    }
+    .icon-plane-white{
+      background-color: $red;
+      position: absolute;
+    }
+    .icon-stat-white{
+      background-color: $pink;
+      position: absolute;
+    }
+
+    .app-details{
+      padding-left: 85px;
+      h3{
+        font-size: 12px!important;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 10px!important;
+      }
+    }
+
+    /* Tooltip text */
+    .tooltip {
+      position: relative;
+        display: block;
+
+    }
+    .config{
+      .config-text{
+        // display: none;
+        border: 1px solid $grey;
+        border-radius: 5px;
+        background-color: $grey;
+        padding: 5px;
+        position: absolute;
+        top: -30px;
+        right: 0px;
+        background-color: #fff;
+        font-size: 9px;
+        color: $grey;
         i{
-          color: $grey!important;
+          border: none;
+          -webkit-text-stroke: 1px $grey;
+          color: #fff;
+          top: 12px;
+          font-size: 20px;
         }
       }
-  }
-    .active{
-      background-color: #f9f9f9;
-      border-color: #ddd;
-      color: $grey!important;
-      border-left: 3px solid $blue;
-    }
-    .disable{
-      border-color: #ddd;
-      color: $off-white!important;
-      // border-left: 3px solid transparent;
-    }
-  }
-} //side-sub-menu
-
-// .app-grid{
-// }
-.app-card{
-  position: relative;
-  border: 1px solid #e8e8e8;
-  margin: 5px;
-  height: 77px;
-  .icon-environmen-white{
-    background-color: $purple;
-    position: absolute;
-  }
-  .icon-globe-white{
-    background-color: $red;
-    position: absolute;
-  }
-  .icon-product-white{
-    background-color: $pink;
-    position: absolute;
-  }
-  .icon-money-white{
-    background-color: $cyan;
-    position: absolute;
-  }
-  .icon-plane-white{
-    background-color: $red;
-    position: absolute;
-  }
-  .icon-stat-white{
-    background-color: $pink;
-    position: absolute;
-  }
-  .app-details{
-    padding-left: 85px;
-    h3{
-      font-size: 12px!important;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    p {
-      font-size: 10px!important;
-    }
-  }
-  .config{
-    .config-text{
-      // display: none;
-      border: 1px solid $grey;
-      border-radius: 5px;
-      background-color: $grey;
-      padding: 5px;
-      position: absolute;
-      top: -30px;
-      right: 0px;
-      background-color: #fff;
-      font-size: 9px;
-      color: $grey;
       i{
-        border: none;
-        -webkit-text-stroke: 1px $grey;
-        color: #fff;
-        top: 12px;
-        font-size: 20px;
+        font-size: 10px;
+        padding: 3px;
+        border: 1px solid #dde0e3;
+        color: #dde0e3;
+        position: absolute;
+        top: 3px;
+        right: 3px;
       }
     }
-    i{
-      font-size: 10px;
-      padding: 3px;
-      border: 1px solid #dde0e3;
-      color: #dde0e3;
-      position: absolute;
-      top: 3px;
-      right: 3px;
-    }
-  }
-} //app-card
+  } //app-card
 
-
-
-
-
-
-
-
-
-
-
+}
