@@ -1,0 +1,72 @@
+.holiday {
+  .disabled{
+    background-color: $base-dark;
+
+  }
+  .dis-font{
+    color: #dbdfe2;
+  }
+  .bootstrap-select.btn-group .dropdown-toggle .caret {
+    width: 10px;
+    height: 10px;
+    border: none;
+    font-family: 'Glyphicons Halflings';
+  }
+
+  .bootstrap-select.btn-group .dropdown-toggle .caret:before {
+    content: "\e003";
+  }
+  .step{
+    position: relative;
+    padding: 30px 30px 55px 24px;
+    text-align: center!important;
+    .r-arrow{
+      position: absolute;
+      left: 1px;
+      top: 34px;
+      i{
+        font-size: 30px;
+      }
+    }
+    .step-num{
+      // margin-right: 20px;
+      font-size: 30px;
+      border-right: 1px solid #dcdfe2;
+      @extend .center;
+    }
+    .step-title{
+      font-size: 12px;
+      padding: 10px 5px 5px 7px;
+    }
+  }
+  .logs{
+    padding: 10px 10px 20px 10px;
+    p {
+      margin-top: 5px;
+      font-size: 11px;
+      float: left;
+      color: $light-font;
+    }
+    .log-title{
+      font-weight: 700;
+      font-family: $heading;
+    }
+
+    .log-info{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      a {
+        width: 19%;
+        float: left;
+      }
+
+      .author{
+        width:  79%;
+        float: left;
+        // padding-top: 5px;
+        padding-left: 10px;
+      }
+    }
+
+  }
+}

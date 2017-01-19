@@ -1,0 +1,33 @@
+.processes{
+  form{
+    // margin-top: 0px;
+    padding-bottom: 30px;
+    select{
+      height: 40px;
+      border-right: none;
+    }
+    .input-group{
+      &:nth-child(1){
+        a {
+          margin-top: 25px;
+        }
+      }
+      .input-group-addon{
+        border-left: none;
+      }
+      .glyphicon{
+        top: 0;
+      }
+    } //input-group
+
+  } //form
+  table{
+    td{
+      a{
+        i{
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}

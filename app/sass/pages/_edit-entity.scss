@@ -1,0 +1,194 @@
+.identity-type{
+  .mar-neg-20{
+    margin-top: -20px;
+  }
+  form{
+    width: 100%;
+    padding: 30px 30px 0px  30px;
+    .col-md-3{
+      width: auto;
+    }
+    label{
+      font-size: 12px;
+      color: $light-font;
+    }
+    input[type=text]{
+      height: 40px;
+      background-color: transparent!important;
+      // border-right: none!important;
+    }
+    .input-group-addon{
+      color: $light-font;
+      background-color: transparent;
+      border-left: none!important;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    select{
+      position:relative;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0px;
+    }
+    .form-group{
+      margin-top: 15px;
+      position: relative;
+      input{
+        width: 100%!important;
+      }
+      span{
+        background-color: transparent!important;
+        position: absolute;
+        top: 31px;
+        right: 10px;
+        border: none;
+        font-size: 10px;
+        font-weight: bold;
+      }
+    }
+
+    //checkbox
+    /* The switch - the box around the slider */
+    .switch {
+      // flex: 1;
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {display:none;}
+
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 23px;
+      left: 0;
+      right: 0;
+      bottom: -11px;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+  }
+  .details{
+    font-size: 12px;
+    color: $dark-font;
+    padding: 30px;
+
+    .list-group{
+      background-color: #f3f3f3!important;
+      padding-bottom: 20px;
+      border: 1px solid #dcdfe2;
+      // border-bottom: none!important;
+      form{
+        margin-top:0px;
+      }
+      a {
+        padding: 10px;
+        color: $dark-font;
+        text-transform: none;
+        border-bottom: 1px solid #dcdfe2!important;
+      }
+      .active{
+        background-color: #dce0e3;
+      }
+      .list-group-item{
+        &:nth-child(1), &:nth-child(2){
+          margin: 0px;
+        }
+        &:last-child{
+          border-bottom: none!important;
+        }
+        &:hover{
+          background-color: #dce0e3;
+           &:nth-child(1), &:nth-child(2){
+            background-color: transparent;
+           }
+          // border-bottom: 1px solid #dcdfe2!important;
+        }
+
+        border-width: 80%;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        background-color: #f3f3f3;
+        i {
+          padding-right: 10px;
+        }
+        .input-group{
+          background-color: #fff;
+          input{
+            border-right: none;
+          }
+          .input-group-addon{
+            background-color: transparent;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+          }
+        }
+      } // list-group-item
+    }
+    .more-info{
+      border-top: 1px solid #dcdfe2;
+      padding: 15px;
+      form{
+        padding: 0px;
+        .form-group{
+          &:nth-child(1){
+            // margin-top: 0px;
+          }
+          input{
+            border-radius: 0px!important;
+          }
+          span{
+            padding-right: 10px;
+          }
+        }
+        .btn-grp{
+          padding-top: 5px;
+        }
+      }
+      .chk-box{
+        margin-top: -30px;
+      }
+
+    } //more-info
+  }
+}
