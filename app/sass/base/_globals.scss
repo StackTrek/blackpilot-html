@@ -28,7 +28,8 @@ a {
   background-color: #fff;
   margin: 50px;
   padding: 26px 23px 26px 23px;
-  box-shadow: 1px 3px 16px $light-grey;
+  // box-shadow: 1px 3px 16px $light-grey;
+  border-top: 5px solid #dcdfe2!important;
 }
 .widget{
   margin-top: 27px;
@@ -288,13 +289,19 @@ a{
 .form-group {
   margin-top: 30px;
   input{
-    height: 50px;
+    height: 40px;
     // max-width: 353px;
     @media (min-width: 1024px){
-      width: 353px;
+      // width: 353px;
     }
     &:nth-child(2){
       margin-bottom: 30px;
+    }
+  }
+  select{
+    height: 40px;
+    option{
+      color: $light-font;
     }
   }
   input[type=email]{
@@ -341,22 +348,23 @@ a{
       .list-group {
 
         a {
+          color: #fff;
           font-size: 12px;
-          padding-left: 60px;
+          padding: 20px 20px 20px 60px;
           position: relative;
           i {
             position: absolute;
-            top: 10px;
+            top: 16px;
             left: 20px;
             font-size: 18px;
             margin-right: 13px;
           }
           .i-float{
             position: absolute;
-            top: 20px;
+            top: 23px;
             left: 33px;
             font-size: 10px;
-            color: $navi-font;
+            color: $light-font;
             background-color: $navi;
             border-radius: 50%;
           }
@@ -431,7 +439,7 @@ a{
         border: none;
         border-radius: 0px;
         border-left: 5px solid transparent;
-        color: $navi-font;
+        color: $light-font;
         padding: 10px 15px 10px 15px;
         // .active {
         //   background-color: red!important;
@@ -449,7 +457,7 @@ a{
 
   .top-menu{
     position: relative;
-    // @extend .center-top;
+    color: #fff;
     padding: 14px 22px 14px 22px;
     background-color: $navi;
     height: 70px;
@@ -460,17 +468,37 @@ a{
       width: 35px;
     }
 
+    .company-info{
+      p { color: $light-font; }
+      span{
+        position: absolute;
+        top: 8px;
+        right: 0px;
+        font-weight: 700;
+      }
+    }
+
     .profile {
-      color: #7c8c94;
+      border-left: 1px solid #333;
+      padding-left: 20px;
+      color: #fff;
+      position: relative;
+      span{
+        position: absolute;
+        top: 8px;
+        right: 0px;
+      }
       .pic{
         float: left;
         margin-right: 13px;
       }
       .name {
         font-weight: bold;
+        padding-top: 5px;
       }
       .position{
-        // float: left;
+        color: $light-font;
+        font-size: 10px;
       }
     }
     .form-link {

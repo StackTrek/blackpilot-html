@@ -1,5 +1,14 @@
 .home{
-
+    form{
+      .input-group-addon{
+        background-color: #fff;
+        border-left: none;
+        border-radius: 0px;
+      }
+      input{
+        border-right: none;
+      }
+    }
     h1{
       font-size: 23px;
     }
@@ -10,7 +19,8 @@
       &:first-child{
         margin-bottom: 50px;
       }
-    }
+    } //p
+
     .greet{
       margin-bottom: 50px;
     }
