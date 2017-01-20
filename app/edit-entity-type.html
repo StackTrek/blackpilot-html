@@ -107,14 +107,14 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reiciendis.</p>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <!-- <div class="col-lg-6">
                 <div class="right-info">
                   <h3>Get BlackPilot Training and Education</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ullam natus adipisci explicabo vero delectus, tenetur totam iste est libero.</p>
                   <a href="javascript:void(0)" class="btn btn-small bg-trans">LEARN MORE <i class="fa fa-plus pull-right" aria-hidden="true"></i></a>
                   <a href="javascript:void(0)" class="dismiss">DISMISS</a>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         <!-- top info -->
@@ -126,6 +126,12 @@
                 <li><a data-toggle="tab" href="#installed-apps">Installed Apps</a></li>
                 <li><a data-toggle="tab" href="#updates">Available Updates</a></li>
               </ul>
+              <div class="row">
+                <div class="btn-grps">
+                    <a href="javascript:void(0)" class="btn btn-disable pull-left">DISCARD</a>
+                    <a href="javascript:void(0)" class="btn btn-std bg-blue pull-right"><i class="fa fa-floppy-o" aria-hidden="true"></i>SAVE CHANGES</a>
+                </div>
+              </div>
 
               <div class="tab-content">
                 <div class="identity-type">
@@ -543,7 +549,30 @@
   <!-- build:js js/main.js -->
   <script src="js/main.js"></script>
   <!-- endbuild -->
+  <!-- configuration settings on process-designer.html -->
+  <script>
+    // function formSettings() {
+    //   document.getElementById('form-settings').style.display = "block";
+    // }
+    $( document ).ready(function() {
+        console.log( "ready!" );
+        function formSettings() {
+          document.getElementById('form-settings').style.display = "block";
+        }
+        // $('html').click(function() {
+        //   $('#form-settings').hide();
+        //  })
 
+        //  $('#config').click(function(e){
+        //      e.stopPropagation();
+        //  });
+
+        // $('#formMenu').click(function(e) {
+        //  $('#form-settings').toggle();
+        //  });
+    });
+
+  </script>
   <!-- chart -->
   <script>
     var ctx = document.getElementById("myChart");

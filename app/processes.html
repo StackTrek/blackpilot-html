@@ -259,7 +259,30 @@
   <!-- build:js js/main.js -->
   <script src="js/main.js"></script>
   <!-- endbuild -->
+  <!-- configuration settings on process-designer.html -->
+  <script>
+    // function formSettings() {
+    //   document.getElementById('form-settings').style.display = "block";
+    // }
+    $( document ).ready(function() {
+        console.log( "ready!" );
+        function formSettings() {
+          document.getElementById('form-settings').style.display = "block";
+        }
+        // $('html').click(function() {
+        //   $('#form-settings').hide();
+        //  })
 
+        //  $('#config').click(function(e){
+        //      e.stopPropagation();
+        //  });
+
+        // $('#formMenu').click(function(e) {
+        //  $('#form-settings').toggle();
+        //  });
+    });
+
+  </script>
   <!-- chart -->
   <script>
     var ctx = document.getElementById("myChart");

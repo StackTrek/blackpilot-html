@@ -133,11 +133,41 @@ a{
     color: $btn-text;
   }
 }
+.btn-menu{
+  width: 45%;
+  margin-top: 5px;
+  margin-right: 5px;
+  float: left;
+  font-family: $font;
+  font-size: 6px;
+  color: $dark-font!important;
+  border-radius: 0px;
+  &:hover{
+    color: $btn-text;
+  }
+}
+.btn-trash{
+  margin: 0px;
+  padding: 2px!important;
+  text-align: center;
+   i{
+    text-align: center;
+   }
+  &:hover{
+    opacity: 0.8;
+    box-shadow: none;
+    outline-color: none;
+    outline-offset: none;
+    text-shadow: none;
+  }
+}
+
 .btn-blue{
   width: 100%;
   background-color: $blue;
   font-family: $font;
-  padding: 12px;
+  font-size: 10px;
+  // padding: 35px;
   color: $btn-text;
   border-radius: 0px;
   &:hover{
@@ -160,8 +190,10 @@ a{
   width: 100%;
   background-color: #9a9fa5;
   font-family: $font;
-  padding: 9px;
+  padding: 12px;
   color: $btn-text;
+  border-radius: 0px;
+  text-align: center;
 }
 .btn-open{
   width: 100%;
@@ -243,6 +275,9 @@ a{
   background-color: transparent;
 }
 //colors
+.white{
+  color: #fff!important;
+}
 .blue {
   color: $blue;
 }
@@ -253,7 +288,7 @@ a{
   color: $light-grey;
 }
 .light-font{
-  color: $light-font;
+  color: $light-font!important;
 }
 .grey{
   color: $grey;

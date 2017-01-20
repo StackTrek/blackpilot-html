@@ -1,0 +1,199 @@
+.processes-designer{
+  .widget{
+    .nav {
+      float: left;
+      li {
+        a {
+          color: $dark-font;
+          &:hover, &:active, &:focus, &:visited{
+            opacity: 0.8;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    .btn-grps{
+      a {
+        i {
+          padding-right: 15px;
+        }
+      }
+    }
+
+  } //widget
+  .config{
+    float: right;
+    color: $light-font;
+    width: 277px;
+    height: 100vh;
+    background-color: $navi;
+    .nav-header{
+      padding: 20px;
+      background-color: $navi-header;
+      a {
+        color: $light-font;
+        i{
+          float: right;
+        }
+      }
+    }
+    .list-group{
+      background-color: $navi;
+      .list-group-item{
+        background-color: $navi;
+        border: 3px solid transparent;
+        border-radius: 0px;
+        // border-right: 2px solid transparent!important;
+        small{
+          color: $light-font!important;
+          font-size: 60%;
+        }
+        &:hover{
+          color: $light-font;
+          background-color: $navi-drawer;
+          border-right: 3px solid $blue!important;
+        }
+      }
+    }
+  } //config
+  .form-settings{
+    float: right;
+    background-color: $navi-drawer;
+    width: 430px;
+    height: 100vh;
+    color: $light-font;
+    .nav {
+      font-size: 10px;
+      li {
+        padding-left: 10px;
+
+        a {
+          color: $light-font;
+          border-radius: 0px;
+          border-bottom: 2px solid transparent;
+          &:hover, &:active, &:focus{
+            background-color: transparent!important;
+            border-bottom: 2px solid $blue;
+          }
+        }
+      }
+    }
+    .settings{
+      font-size: 10px;
+      .list-group{
+        background-color: $navi;
+        a {
+          color: $light-font;
+        }
+        .list-group-head{
+          padding-left: 10px;
+          background-color: $navi-sub-header;
+          color: $light-font;
+        }
+        // .list-group-item:hover, .list-group-item:active{
+        //     color: #fff;
+        //     opacity: 0.8;
+        //   }
+        .list-group-item{
+          text-transform: none;
+          padding-left: 20px;
+          background-color: $navi-drawer;
+          border: 3px solid transparent;
+          border-radius: 0px;
+          padding-right: 20px;
+          color: $light-font;
+          &:hover{
+            background-color: $navi-drawer;
+            color: $light-font!important;
+          }
+          input[type=text]{
+            color: #fff;
+            border-radius: 2px;
+            background-color: $navi-drawer!important;
+          }
+          a {
+            i {
+              padding-right: 5px;
+            }
+          }
+          table{
+            td{
+              .btn-menu{
+                width: 100%;
+                margin-top: 0px;
+                // color: $light-font!important;
+              }
+            }
+          }
+
+          .switch input {display:none;}
+          /* The slider */
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            width: 11%!important;
+            top: 5px;
+            right: 20px;
+            bottom: 7px;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+
+          .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            // top: ;
+            left: 4px;
+            bottom: 1px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+
+          input:checked + .slider {
+            background-color: #2196F3;
+          }
+
+          input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+          }
+
+          input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+          }
+          /* Rounded sliders */
+          .slider.round {
+            border-radius: 34px;
+            // background-color: transparent;
+            // border: 1px solid #dcdfe2;
+          }
+
+          .slider.round:before {
+            border-radius: 50%;
+          }
+          /* end The slider */
+        } //list-group-items
+      }
+    } //settings
+  } //form-settings
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

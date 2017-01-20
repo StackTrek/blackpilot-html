@@ -45,10 +45,30 @@
   .apps{
     background-color: #fff;
     margin: 50px;
-    box-shadow: 1px 3px 16px $light-grey;
+    // box-shadow: 1px 3px 16px $light-grey;
 
     .apps-link{
+      position: relative;
+      .btn-grps{
+        width: 35%;
+        position: absolute;
+        top: -3px;
+        right: 0px;
+        a{
+          width: 50%;
+          padding: 10px;
+          // margin-left: 5px;
+          &:nth-child(1){
+            width: 47%;
+            // margin-left: 5px;
+          }
+        }
+        i {
+          padding-right: 10px;
+        }
+      }
       .nav-tabs{
+        background-color: #f1f3f6;
         li {
           background-color: #f8f8f8;
           border-top: 1px solid #dee0e3;
@@ -105,7 +125,8 @@
           float: right;
           .form-group{
             span {
-              background-color: #f7f7f7;
+              background-color: $login-box;
+              border-left: none;
               a{
                 color: #999fa5;
               }
@@ -120,7 +141,8 @@
             }
             input[type=text]{
               height: 37px;
-              background-color: $input-bg;
+              background-color: $login-box;
+              border-right: none;
             }
           }
         }
@@ -218,7 +240,7 @@
     }
     .card-dot{
       position: absolute;
-      top: 90px;
+      top: 93px;
       left: 113px;
     }
     .card-details{
