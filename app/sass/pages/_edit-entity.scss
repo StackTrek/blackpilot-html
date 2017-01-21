@@ -1,3 +1,11 @@
+.marketplace{
+  .wrap {
+    .apps{
+      // margin: none!important;
+      margin: 16px 0px 16px 0px;
+    }
+  }
+}
 .identity-type{
   .mar-neg-20{
     margin-top: -20px;
@@ -8,6 +16,10 @@
     .col-md-3{
       width: auto;
     }
+    .hr-div{
+      margin-top: 0px!important;
+      margin-bottom: 0px!important;
+    }
     label{
       font-size: 12px;
       color: $light-font;
@@ -15,7 +27,7 @@
     input[type=text]{
       height: 40px;
       background-color: transparent!important;
-      // border-right: none!important;
+      border-right: 1px solid #dcdef2!important;
     }
     .input-group-addon{
       color: $light-font;
@@ -30,8 +42,14 @@
       -webkit-border-radius: 0px;
     }
     .form-group{
-      margin-top: 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
       position: relative;
+      &:nth-child(4){
+        // border-top: 1px solid #dcdef2;
+        padding-bottom: 1px;
+        margin-top: 90px;
+      }
       input{
         width: 100%!important;
       }
@@ -143,6 +161,16 @@
            }
           // border-bottom: 1px solid #dcdfe2!important;
         }
+        a {
+          // float: left;
+          &:nth-child(1){
+            padding-left: 20px;
+          }
+          text-align: left;
+          i {
+            float: right;
+          }
+        }
 
         border-width: 80%;
         border-left: none;
@@ -171,9 +199,6 @@
       form{
         padding: 0px;
         .form-group{
-          &:nth-child(1){
-            // margin-top: 0px;
-          }
           input{
             border-radius: 0px!important;
           }
@@ -182,11 +207,12 @@
           }
         }
         .btn-grp{
-          padding-top: 5px;
+          padding-top: 2px;
         }
       }
       .chk-box{
-        margin-top: -30px;
+        margin-top: -20px;
+        margin-bottom: 25px;
       }
 
     } //more-info

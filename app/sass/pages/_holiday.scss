@@ -3,6 +3,10 @@
     background-color: $base-dark;
 
   }
+  .holiday-request{
+    background-color: red;
+    margin: 16px 30px 16px 30px;
+  }
   .dis-font{
     color: #dbdfe2;
   }
@@ -40,10 +44,11 @@
     }
   }
   .logs{
-    padding: 10px 10px 20px 10px;
+    padding: 10px 10px 50px 10px;
+    border-bottom: 1px solid #dcdef2!important;
     p {
       margin-top: 5px;
-      font-size: 11px;
+      font-size: 10px;
       float: left;
       color: $light-font;
     }
@@ -69,4 +74,19 @@
     }
 
   }
+  .widget{
+    .form-group{
+      .btn{
+        float:left;
+        max-width: 150px;
+        margin-right: 10px;
+      }
+    }
+  }
 }
+
+
+
+
+
+
