@@ -477,12 +477,15 @@ a{
         }
       }
       .active{
-          background-color: $navi-drawer;
-          border-left: 5px solid $bg-logo;
-          .i-float{
-            background-color: #fff;
-          }
+        background-color: $body-bg;
+        border-left: 5px solid transparent;
+        a {
+          color: $dark-font;
         }
+        .i-float{
+          background-color: #fff;
+        }
+      }
 
       .li{
         background-color: transparent;
