@@ -32,6 +32,7 @@
     float: left;
     li{
       list-style: none;
+      border-left: 5px solid transparent;
       margin: 0;
       padding: 0;
       float: left;
@@ -43,6 +44,7 @@
         position: relative;
         z-index: 510;
         cursor: default;
+        border-left: 5px solid $blue;
       }
       &:hover > ul {
         visibility: visible;
@@ -52,6 +54,7 @@
       }
       ul {
         li {
+          border-left: 5px solid transparent!important;
           a {
             margin-left: 20px;
             padding-left: 30px;
