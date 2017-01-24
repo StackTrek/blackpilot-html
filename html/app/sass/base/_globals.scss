@@ -2,6 +2,10 @@ body {
   font-family: $font;
 }
 
+section {
+  min-height: 100vh;
+}
+
 section, div {
   position: relative;
 }
