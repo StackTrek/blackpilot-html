@@ -29,7 +29,8 @@
     float: right;
     color: $light-font;
     width: 277px;
-    height: 100vh;
+    height: 100%;
+    font-size: 13px;
     background-color: $navi;
 
     .nav-header {
@@ -47,6 +48,7 @@
 
     .list-group {
       background-color: $navi;
+      font-size: 13px;
 
       .list-group-item {
         background-color: $navi;
@@ -57,7 +59,7 @@
 
         small {
           color: $light-font !important;
-          font-size: 60%;
+          font-size: 11px;
         }
 
         &:hover {
@@ -87,6 +89,7 @@
           color: $light-font;
           border-radius: 0px;
           border-bottom: 2px solid transparent;
+          font-size: 12px;
 
           &:hover, &:active, &:focus {
             background-color: transparent !important;
@@ -125,6 +128,7 @@
           border-radius: 0px;
           padding-right: 20px;
           color: $light-font;
+          font-size: 13px;
 
           &:hover {
             background-color: $navi-drawer;
@@ -146,7 +150,6 @@
           table {
             td {
               .btn-menu {
-                width: 100%;
                 margin-top: 0px;
 
                 // color: $light-font!important;
@@ -166,7 +169,7 @@
             width: 11% !important;
             top: 5px;
             right: 20px;
-            bottom: 7px;
+            bottom: 11px;
             background-color: #ccc;
             -webkit-transition: .4s;
             transition: .4s;
@@ -226,4 +229,8 @@
   }
 
   //form-settings
+}
+
+.setting-config-panel {
+  height: 731px;
 }

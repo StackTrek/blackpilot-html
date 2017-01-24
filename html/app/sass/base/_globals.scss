@@ -2,8 +2,8 @@ body {
   font-family: $font;
 }
 
-section {
-  overflow-x: hidden;
+section, div {
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -179,6 +179,8 @@ a {
   font-family: $font;
   color: $btn-text !important;
   border-radius: 0px;
+  padding: 10px;
+  padding-bottom: 9px;
 
   &:hover {
     color: $btn-text;
@@ -199,14 +201,14 @@ a {
 }
 
 .btn-menu {
-  width: 45%;
   margin-top: 5px;
   margin-right: 5px;
   float: left;
   font-family: $font;
-  font-size: 6px;
+  font-size: 10px;
   color: $dark-font !important;
   border-radius: 0px;
+  padding-bottom: 4px;
 
   &:hover {
     color: $btn-text;
@@ -220,6 +222,7 @@ a {
 
   i {
     text-align: center;
+    color: #fff;
   }
 
   &:hover {
@@ -493,12 +496,12 @@ a {
   // height: 100%!important;
 
   @media (min-width: 1200px) {
-    min-height: 800px;
-    max-height: 1000px !important;
-    height: 1000px !important;
+    height: 100%;
   }
 
   ul {
+    height: 100%;
+
     a {
       color: #fff;
       font-size: 12px;
@@ -787,6 +790,17 @@ a {
     td {
       vertical-align: middle !important;
       padding: 4px 8px !important;
+
+      &.actions {
+        text-align: right;
+      }
     }
   }
+}
+
+.side-nav {
+  position: fixed;
+  width: 228px;
+  z-index: 999;
+  height: 100%;
 }
