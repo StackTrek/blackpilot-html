@@ -179,6 +179,8 @@ a {
   font-family: $font;
   color: $btn-text !important;
   border-radius: 0px;
+  padding: 10px;
+  padding-bottom: 9px;
 
   &:hover {
     color: $btn-text;
@@ -199,14 +201,14 @@ a {
 }
 
 .btn-menu {
-  width: 45%;
   margin-top: 5px;
   margin-right: 5px;
   float: left;
   font-family: $font;
-  font-size: 6px;
+  font-size: 10px;
   color: $dark-font !important;
   border-radius: 0px;
+  padding-bottom: 4px;
 
   &:hover {
     color: $btn-text;
@@ -220,6 +222,7 @@ a {
 
   i {
     text-align: center;
+    color: #fff;
   }
 
   &:hover {
@@ -787,6 +790,10 @@ a {
     td {
       vertical-align: middle !important;
       padding: 4px 8px !important;
+
+      &.actions {
+        text-align: right;
+      }
     }
   }
 }
