@@ -1,69 +1,85 @@
-.processes-designer{
-  .widget{
+.processes-designer {
+  .widget {
     .nav {
       float: left;
+
       li {
         a {
           color: $dark-font;
-          &:hover, &:active, &:focus, &:visited{
+
+          &:hover, &:active, &:focus, &:visited {
             opacity: 0.8;
             background-color: transparent;
           }
         }
       }
     }
-    .btn-grps{
+
+    .btn-grps {
       a {
         i {
           padding-right: 15px;
         }
       }
     }
+  }
 
-  } //widget
-  .config{
+  //widget
+  .config {
     float: right;
     color: $light-font;
     width: 277px;
     height: 100vh;
     background-color: $navi;
-    .nav-header{
+
+    .nav-header {
       padding: 20px;
       background-color: $navi-header;
+
       a {
         color: $light-font;
-        i{
+
+        i {
           float: right;
         }
       }
     }
-    .list-group{
+
+    .list-group {
       background-color: $navi;
-      .list-group-item{
+
+      .list-group-item {
         background-color: $navi;
         border: 3px solid transparent;
         border-radius: 0px;
+
         // border-right: 2px solid transparent!important;
-        small{
-          color: $light-font!important;
+
+        small {
+          color: $light-font !important;
           font-size: 60%;
         }
-        &:hover{
+
+        &:hover {
           color: $light-font;
           background-color: $navi-drawer;
-          border-right: 3px solid $blue!important;
+          border-right: 3px solid $blue !important;
         }
       }
     }
-  } //config
-  .form-settings{
+  }
+
+  //config
+  .form-settings {
     float: right;
     background-color: $navi-drawer;
     width: 430px;
     height: 100vh;
     color: $light-font;
+
     .nav {
       font-size: 10px;
+
       li {
         padding-left: 10px;
 
@@ -71,30 +87,37 @@
           color: $light-font;
           border-radius: 0px;
           border-bottom: 2px solid transparent;
-          &:hover, &:active, &:focus{
-            background-color: transparent!important;
+
+          &:hover, &:active, &:focus {
+            background-color: transparent !important;
             border-bottom: 2px solid $blue;
           }
         }
       }
     }
-    .settings{
+
+    .settings {
       font-size: 10px;
-      .list-group{
+
+      .list-group {
         background-color: $navi;
+
         a {
           color: $light-font;
         }
-        .list-group-head{
+
+        .list-group-head {
           padding: 20px 10px 20px 25px;
           background-color: $navi-sub-header;
           color: $light-font;
         }
+
         // .list-group-item:hover, .list-group-item:active{
         //     color: #fff;
         //     opacity: 0.8;
         //   }
-        .list-group-item{
+
+        .list-group-item {
           text-transform: none;
           padding-left: 20px;
           background-color: $navi-drawer;
@@ -102,36 +125,45 @@
           border-radius: 0px;
           padding-right: 20px;
           color: $light-font;
-          &:hover{
+
+          &:hover {
             background-color: $navi-drawer;
-            color: $light-font!important;
+            color: $light-font !important;
           }
-          input[type=text]{
+
+          input[type=text] {
             color: #fff;
             border-radius: 2px;
-            background-color: $navi-drawer!important;
+            background-color: $navi-drawer !important;
           }
+
           a {
             i {
               padding: 3px;
             }
           }
-          table{
-            td{
-              .btn-menu{
+
+          table {
+            td {
+              .btn-menu {
                 width: 100%;
                 margin-top: 0px;
+
                 // color: $light-font!important;
+
               }
             }
           }
 
-          .switch input {display:none;}
+          .switch input {
+            display: none;
+          }
+
           /* The slider */
           .slider {
             position: absolute;
             cursor: pointer;
-            width: 11%!important;
+            width: 11% !important;
             top: 5px;
             right: 20px;
             bottom: 7px;
@@ -142,12 +174,13 @@
 
           .slider:before {
             position: absolute;
-            content: "";
+            content: '';
             height: 16px;
             width: 16px;
+
             // top: ;
             left: 4px;
-            bottom: 1px;
+            bottom: 3px;
             background-color: white;
             -webkit-transition: .4s;
             transition: .4s;
@@ -166,34 +199,31 @@
             -ms-transform: translateX(26px);
             transform: translateX(26px);
           }
+
           /* Rounded sliders */
           .slider.round {
             border-radius: 34px;
+
             // background-color: transparent;
             // border: 1px solid #dcdfe2;
+
           }
 
           .slider.round:before {
             border-radius: 50%;
           }
+
           /* end The slider */
-        } //list-group-items
+        }
+
+        //list-group-items
+
       }
-    } //settings
-  } //form-settings
+    }
+
+    //settings
+
+  }
+
+  //form-settings
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

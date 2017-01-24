@@ -1,1 +1,6 @@
-console.log('\'Allo \'Allo!');
+
+"use strict";
+$(function() {
+  $('.date-select').datepicker({
+});
+});

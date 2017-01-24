@@ -1,73 +1,91 @@
-.info{
+.info {
   padding: 16px 30px 16px 30px;
-    p{
-      font-size: 12px;
+
+  p {
+    font-size: 12px;
+  }
+
+  .left-info {
+    h1 {
+      font-size: 25px;
     }
-    .left-info{
-      h1{
-        font-size: 25px;
-      }
-      .breadcrumb{
-          padding: 8px 0px;
-        background-color: transparent;
-        li {
-          a{
-            font-size: 11px;
-            color: #666666;
-            &:hover{
-              color: $blue!important;
-            }
+
+    .breadcrumb {
+      padding: 8px 0px;
+      background-color: transparent;
+
+      li {
+        a {
+          font-size: 11px;
+          color: #666666;
+
+          &:hover {
+            color: $blue !important;
           }
         }
-        .active{
-          color: $blue!important;
-        }
+      }
+
+      .active {
+        color: $blue !important;
       }
     }
-    .right-info{
-      .dismiss {
-        font-size: 10px;
-        color: #555;
-        &:nth-child(4){
-          margin-left: 20px;
-        }
-      }
-      h3{
-        font-size: 18px;
+  }
+
+  .right-info {
+    .dismiss {
+      font-size: 10px;
+      color: #555;
+
+      &:nth-child(4) {
+        margin-left: 20px;
       }
     }
-  }//info
-.marketplace{
-    a {
-      color: $light-font;
+
+    h3 {
+      font-size: 18px;
     }
-  .apps{
+  }
+}
+
+//info
+.marketplace {
+  a {
+    padding: 5px 10px;
+    padding-top: 7px;
+  }
+
+  .apps {
     background-color: #fff;
     margin: 16px 30px 16px 30px;
+
     // box-shadow: 1px 3px 16px $light-grey;
 
-    .apps-link{
+    .apps-link {
       position: relative;
-      .btn-grps{
+
+      .btn-grps {
         width: 35%;
+        text-align: right;
         position: absolute;
         top: -3px;
         right: 0px;
-        a{
-          width: 50%;
+
+        a {
+          width: 140px;
           padding: 10px;
+
           // margin-left: 5px;
-          &:nth-child(1){
-            width: 47%;
-            // margin-left: 5px;
-          }
+
         }
+
         i {
-          padding-right: 10px;
+          padding-right: 5px;
         }
       }
-      .nav-tabs{
+
+      .nav-tabs {
         background-color: #f1f3f6;
+
         li {
           background-color: #f8f8f8;
           border-top: 1px solid #dee0e3;
@@ -77,41 +95,50 @@
           a {
             color: $dark-grey;
             margin: 0px;
-            &:hover{
+
+            &:hover {
               border-bottom: none;
             }
           }
         }
-        .active{
-          li{
+
+        .active {
+          li {
             border-radius: 0px;
           }
-          a{
+
+          a {
             border-radius: 0px;
             border-top: 4px solid #ddd;
-            border-bottom:0px;
+            border-bottom: 0px;
             border-left: 0px;
           }
         }
       }
-      .tab-content{
+
+      .tab-content {
         position: relative;
-        .tab-pane{
+
+        .tab-pane {
           padding: 20px 20px 60px 20px;
         }
-        h3{
+
+        h3 {
           font-size: 20px;
           color: #333;
           margin-bottom: 5px;
         }
-        p{
+
+        p {
           font-size: 12px;
           color: #333;
         }
-        .left-tab-info{
-          a{
+
+        .left-tab-info {
+          a {
             text-align: center;
             font-size: 10px;
+
             i {
               position: absolute;
               top: 53%;
@@ -119,48 +146,56 @@
             }
           }
         }
+
         //input
-        form{
+        form {
           float: right;
-          .form-group{
+
+          .form-group {
             span {
               background-color: $login-box;
               border-left: none;
-              a{
+
+              a {
                 color: #999fa5;
               }
             }
-            input{
-              font-size: 12px;
 
+            input {
+              font-size: 12px;
               width: 100%;
               border-top-left-radius: 3px;
               border-bottom-left-radius: 3px;
               border-color: #dee0e3;
             }
-            input[type=text]{
+
+            input[type=text] {
               height: 37px;
               background-color: $login-box;
               border-right: none;
             }
           }
         }
-        .get-more-apps{
+
+        .get-more-apps {
           position: absolute;
           bottom: 73px;
           right: 0px;
-          .more-card{
+
+          .more-card {
             padding-left: 100px;
             position: relative;
-            .more-icon{
+
+            .more-icon {
               position: absolute;
               border: 10px solid #f8f8f8;
               background-color: #f8f8f8;
               right: 0;
               top: 22px;
               border-radius: 50%;
+
               a {
-                i{
+                i {
                   color: #3e3e3e;
                   background-color: #fff;
                   font-size: 40px;
@@ -169,65 +204,90 @@
                   border-radius: 50%;
                 }
               }
-            } //more-icon
-            .more-details{
+            }
+
+            //more-icon
+            .more-details {
               padding-right: 20px;
-              h3{
+
+              h3 {
                 font-size: 20px;
               }
-              p{
+
+              p {
                 font-size: 12px;
                 color: #626262;
               }
             }
           }
 
-          .more-details{
+          .more-details {
             // text-align: right;
             // padding-top: 0px;
             // margin-left: 50px;
+
             // p{
             //   width: 50%;
             // }
+
           }
         }
-      } // tab-content
-    } //apps-link
-  } //apps
+      }
 
-  .flex-grid{
-    display: flex;
-    // flex-wrap: wrap;
+      // tab-content
+
+    }
+
+    //apps-link
+
   }
-  .flex-card{
+
+  //apps
+
+  .flex-grid {
+    display: flex;
+
+    // flex-wrap: wrap;
+
+  }
+
+  .flex-card {
     flex: 1;
   }
-  .app-category{
+
+  .app-category {
     text-align: center;
   }
-  .card{
+
+  .card {
     position: relative;
     margin: 5px;
     border: 1px solid transparent;
-    padding: 30px 10px 30px 10px;
-    &:hover{
+    padding: 15px;
+
+    &:hover {
       border: 1px solid #dadada;
       background-color: #f8f8f8;
-      .card-icon{
+
+      .card-icon {
         background-color: transparent;
+
         i {
           background-color: #fff;
         }
       }
     }
-    .card-icon{
+
+    .card-icon {
       @include centerer(true, false);
+
       border: 10px solid #f8f8f8;
       background-color: #f8f8f8;
       padding: 0px;
       margin: 0px;
       border-radius: 50%;
-      i{
+
+      i {
         background-color: #fff;
         margin: 0px;
         color: #414141;
@@ -237,119 +297,147 @@
         padding: 15px 18px 15px 18px;
       }
     }
-    .card-dot{
+
+    .card-dot {
       position: absolute;
       top: 93px;
       left: 113px;
     }
-    .card-details{
+
+    .card-details {
       padding-top: 90px;
-      .card-title{
-        font-size: 13px!important;
+
+      .card-title {
+        font-size: 13px !important;
       }
-      p{
+
+      p {
         color: #626262;
-        font-size: 10px!important;
+        font-size: 10px !important;
       }
-      a{
+
+      a {
         text-align: left;
         position: relative;
-        font-size: 8px!important;
-        i{
+        font-size: 8px !important;
+
+        i {
           position: absolute;
           top: 35%;
           right: 5%;
         }
       }
     }
-  } //card
-  .side-sub-menu{
-    .list-group{
-      border-radius: 0px!important;
-      .list-group-item{
+  }
+
+  //card
+  .side-sub-menu {
+    .list-group {
+      border-radius: 0px !important;
+
+      .list-group-item {
         font-size: 12px;
         border-radius: 0px;
         background-color: #fff;
+
         // border-left: 1px solid transparent;
-        i{
+
+        i {
           margin-right: 20px;
         }
-        &:hover{
+
+        &:hover {
           background-color: #f9f9f9;
           border-color: #ddd;
-          color: $grey!important;
+          color: $grey !important;
           border-left: 3px solid $blue;
-          i{
-            color: $grey!important;
+
+          i {
+            color: $grey !important;
           }
         }
-    }
-      .active{
+      }
+
+      .active {
         background-color: #f9f9f9;
         border-color: #ddd;
-        color: $grey!important;
+        color: $grey !important;
         border-left: 3px solid $blue;
       }
-      .disable{
+
+      .disable {
         border-color: #ddd;
-        color: $off-white!important;
+        color: $off-white !important;
+
         // border-left: 3px solid transparent;
+
       }
     }
-  } //side-sub-menu
+  }
+
+  //side-sub-menu
 
   // .app-grid{
   // }
-  .app-card{
+
+  .app-card {
     position: relative;
     border: 1px solid #e8e8e8;
     margin: 5px;
     height: 77px;
-    .icon-environmen-white{
+
+    .icon-environmen-white {
       background-color: $purple;
       position: absolute;
     }
-    .icon-globe-white{
+
+    .icon-globe-white {
       background-color: $red;
       position: absolute;
     }
-    .icon-product-white{
-      background-color: $pink;
-      position: absolute;
-    }
-    .icon-money-white{
-      background-color: $cyan;
-      position: absolute;
-    }
-    .icon-plane-white{
-      background-color: $red;
-      position: absolute;
-    }
-    .icon-stat-white{
+
+    .icon-product-white {
       background-color: $pink;
       position: absolute;
     }
 
-    .app-details{
+    .icon-money-white {
+      background-color: $cyan;
+      position: absolute;
+    }
+
+    .icon-plane-white {
+      background-color: $red;
+      position: absolute;
+    }
+
+    .icon-stat-white {
+      background-color: $pink;
+      position: absolute;
+    }
+
+    .app-details {
       padding-left: 85px;
-      h3{
-        font-size: 12px!important;
+
+      h3 {
+        font-size: 12px !important;
         margin-top: 10px;
         font-weight: bold;
       }
+
       p {
-        font-size: 10px!important;
+        font-size: 10px !important;
       }
     }
 
     /* Tooltip text */
     .tooltip {
       position: relative;
-        display: block;
-
+      display: block;
     }
-    .config{
-      .config-text{
+
+    .config {
+      .config-text {
         // display: none;
         border: 1px solid $grey;
         border-radius: 5px;
@@ -361,7 +449,8 @@
         background-color: #fff;
         font-size: 9px;
         color: $grey;
-        i{
+
+        i {
           border: none;
           -webkit-text-stroke: 1px $grey;
           color: #fff;
@@ -369,7 +458,8 @@
           font-size: 20px;
         }
       }
-      i{
+
+      i {
         font-size: 10px;
         padding: 3px;
         border: 1px solid #dde0e3;
@@ -379,6 +469,7 @@
         right: 3px;
       }
     }
-  } //app-card
+  }
 
+  //app-card
 }

@@ -1,15 +1,29 @@
 .holiday {
-  .disabled{
-    background-color: $base-dark;
+  .r-arrow {
+    @include centerer(false, true);
 
+    left: 5px;
+    top: 65%;
+    opacity: 0.3;
+
+    i {
+      font-size: 30px;
+    }
   }
-  .holiday-request{
+
+  .disabled {
+    background-color: $base-dark;
+  }
+
+  .holiday-request {
     background-color: red;
     margin: 16px 30px 16px 30px;
   }
-  .dis-font{
+
+  .dis-font {
     color: #dbdfe2;
   }
+
   .bootstrap-select.btn-group .dropdown-toggle .caret {
     width: 10px;
     height: 10px;
@@ -18,75 +32,68 @@
   }
 
   .bootstrap-select.btn-group .dropdown-toggle .caret:before {
-    content: "\e003";
+    content: '\e003';
   }
-  .step{
+
+  .step {
     position: relative;
-    padding: 30px 30px 55px 24px;
-    text-align: center!important;
-    .r-arrow{
-      position: absolute;
-      left: 1px;
-      top: 34px;
-      i{
-        font-size: 30px;
-      }
-    }
-    .step-num{
+    text-align: center !important;
+
+    .step-num {
       // margin-right: 20px;
       font-size: 30px;
       border-right: 1px solid #dcdfe2;
+
       @extend .center;
     }
-    .step-title{
+
+    .step-title {
       font-size: 12px;
       padding: 10px 5px 5px 7px;
     }
   }
-  .logs{
-    padding: 10px 10px 50px 10px;
-    border-bottom: 1px solid #dcdef2!important;
+
+  .logs {
+    padding: 10px 10px 60px 10px;
+    border-bottom: 1px solid #dcdef2 !important;
+
     p {
       margin-top: 5px;
       font-size: 10px;
       float: left;
       color: $light-font;
     }
-    .log-title{
+
+    .log-title {
       font-weight: 700;
       font-family: $heading;
     }
 
-    .log-info{
+    .log-info {
       margin-top: 10px;
       margin-bottom: 10px;
+
       a {
-        width: 19%;
         float: left;
       }
 
-      .author{
-        width:  79%;
+      .author {
         float: left;
+
         // padding-top: 5px;
         padding-left: 10px;
       }
     }
-
   }
-  .widget{
-    .form-group{
-      .btn{
-        float:left;
+
+  .widget {
+    .form-group {
+      .btn {
+        float: left;
         max-width: 150px;
         margin-right: 10px;
+        padding-top: 8px;
       }
     }
   }
 }
-
-
-
-
-
-

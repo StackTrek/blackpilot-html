@@ -1,19 +1,25 @@
-.data-designer{
-  form{
+.data-designer {
+  form {
     .btn-std {
-      padding: 12px;
+      padding: 10px;
+      padding-top: 12px;
     }
   }
-  table{
+
+  table {
     margin-top: 20px;
     border: 1px solid #dcdfe2;
-    td{
+
+    td {
+      border: 1px solid #dcdfe2;
+
       i {
         padding-right: 10px;
       }
-      a{
+
+      a {
         i {
-          padding-right: 10px;
+          padding-right: 3px;
         }
       }
     }
