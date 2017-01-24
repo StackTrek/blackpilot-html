@@ -115,7 +115,8 @@ gulp.task('html', ['styles'], () => {
         .pipe(assets)
         .pipe($.if('*.js', $.uglify()))
         .pipe($.if('*.css', $.minifyCss({
-            compatibility: '*'
+            compatibility: '*',
+            processImport:false
         })))
         .pipe(assets.restore())
         .pipe($.useref())
