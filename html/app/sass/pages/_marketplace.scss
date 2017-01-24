@@ -67,8 +67,8 @@
         width: 35%;
         text-align: right;
         position: absolute;
-        top: -3px;
-        right: 0px;
+        top: -40px;
+        right: 16px;
 
         a {
           width: 140px;
@@ -286,6 +286,8 @@
       padding: 0px;
       margin: 0px;
       border-radius: 50%;
+      width: 100px;
+      height: 100px;
 
       i {
         background-color: #fff;
@@ -294,7 +296,9 @@
         border: 1px solid #eaeaea;
         border-radius: 50%;
         font-size: 40px;
-        padding: 15px 18px 15px 18px;
+        padding: 18px;
+        width: 80px;
+        height: 80px;
       }
     }
 

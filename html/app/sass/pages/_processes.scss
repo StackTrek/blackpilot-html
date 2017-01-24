@@ -1,40 +1,50 @@
-.processes{
-  .wrap{
-    .info{
+.processes {
+  .wrap {
+    .info {
       padding: 0px;
     }
   }
-  form{
+
+  form {
     // margin-top: 0px;
     padding-bottom: 30px;
-    select{
-      height: 40px;
+
+    select {
+      height: 37px;
       border-right: none;
     }
-    .input-group{
-      &:nth-child(1){
+
+    .input-group {
+      &:nth-child(1) {
         a {
           margin-top: 25px;
         }
       }
-      .input-group-addon{
+
+      .input-group-addon {
         border-left: none;
       }
-      .glyphicon{
+
+      .glyphicon {
         top: 0;
       }
-    } //input-group
+    }
 
-  } //form
-  table{
-    td{
-      a{
-        i{
-          padding-right: 10px;
+    //input-group
+
+  }
+
+  //form
+  table {
+    td {
+      a {
+        i {
+          padding-right: 5px;
         }
       }
+
       i {
-        padding-right: 10px;
+        padding-right: 5px;
       }
     }
   }

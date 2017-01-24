@@ -2,8 +2,7 @@
   .r-arrow {
     @include centerer(false, true);
 
-    left: 5px;
-    top: 65%;
+    left: -1px;
     opacity: 0.3;
 
     i {
@@ -94,6 +93,19 @@
         margin-right: 10px;
         padding-top: 8px;
       }
+    }
+  }
+}
+
+.steps-content {
+  .widget {
+    min-height: 121px;
+
+    .step {
+      @include centerer(false, true);
+
+      margin: 0 -20px;
+      width: 100%;
     }
   }
 }
