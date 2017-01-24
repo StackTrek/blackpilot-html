@@ -1,21 +1,24 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gulp Starter Kit</title>
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- Place favicon.ico in the root directory -->
-    
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gulp Starter Kit</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
+  <!-- Place favicon.ico in the root directory -->
+  
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr.js"></script>
+  <link rel="stylesheet" href="../plugins/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="../plugins/jquery-ui/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="../plugins/jquery-ui/jquery-ui.theme.min.css">
+</head>
 
-  <body>
-      <!--[if lt IE 10]>
+<body>
+  <!--[if lt IE 10]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
@@ -144,18 +147,22 @@
                     </div>
                   </div>
               </div>
-              <div class="col-md-2 clear-pad">
+              <div class="col-md-2 clear-pad ">
                 <div class="widget disabled">
-                  <div class="row">
-                    <div class="step dis-font no-pad">
-                      <div class="r-arrow">
+                 <div class="r-arrow">
                         <i class="fa fa-caret-right" aria-hidden="true"></i>
                       </div>
+                  <div class="row">
+                    <div class="step dis-font no-pad">
+
                       <div class="col-md-3 clear-pad"><div class="step-num">2</div></div>
                       <div class="col-md-9 clear-pad"><div class="step-title">Request Holiday</div></div>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="clearfix">
+                <br>
               </div>
               <div class="col-md-9">
                   <div class="widget">
@@ -165,15 +172,15 @@
                       <div class="row">
                         <div class="col-md-6">
                           <label for="start">Start</label>
-                          <div class="input-group">
-                            <input type="text" class="form-control" name="start" placeholder="MM/DD/YYYY" aria-describedby="basic-addon1">
+                          <div class="input-group ">
+                            <input type="text" class="date-select form-control" name="start" placeholder="MM/DD/YYYY" aria-describedby="basic-addon1">
                             <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                           </div>
                         </div>
                         <div class="col-md-6">
                           <label for="start">End</label>
                           <div class="input-group">
-                            <input type="text" class="form-control" name="start" placeholder="MM/DD/YYYY" aria-describedby="basic-addon1">
+                            <input type="text" class="date-select form-control" name="start" placeholder="MM/DD/YYYY" aria-describedby="basic-addon1">
                             <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
                           </div>
                         </div>
@@ -261,6 +268,7 @@
   <script src="js/vendor.js"></script>
 
   <script src="js/plugins.js"></script>
+      <script src="../plugins/jquery-ui/jquery-ui.js"></script>
 
   <script src="js/main.js"></script>
   <!-- configuration settings on process-designer.html -->
@@ -382,5 +390,6 @@
     });
   </script>
   <!-- end chart -->
+
 </body>
 

@@ -1,21 +1,24 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gulp Starter Kit</title>
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- Place favicon.ico in the root directory -->
-    
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gulp Starter Kit</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
+  <!-- Place favicon.ico in the root directory -->
+  
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr.js"></script>
+  <link rel="stylesheet" href="../plugins/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="../plugins/jquery-ui/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="../plugins/jquery-ui/jquery-ui.theme.min.css">
+</head>
 
-  <body>
-      <!--[if lt IE 10]>
+<body>
+  <!--[if lt IE 10]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
@@ -136,8 +139,8 @@
                   </ul>
                   <div class="row">
                     <div class="btn-grps">
-                        <a href="javascript:void(0)" class="btn btn-std bg-dark-grey pull-left">DISCARD</a>
-                        <a href="javascript:void(0)" class="btn btn-std bg-blue pull-right"><i class="fa fa-floppy-o" aria-hidden="true"></i>SAVE CHANGES</a>
+                        <a href="javascript:void(0)" class="btn btn-std bg-dark-grey">DISCARD</a>
+                        <a href="javascript:void(0)" class="btn btn-std bg-blue "><i class="fa fa-floppy-o" aria-hidden="true"></i>SAVE CHANGES</a>
                     </div>
                   </div>
 
@@ -235,7 +238,7 @@
                                 </li>
                               </ul>
                             </div> <!-- .col-md-3 -->
-                            <div class="row">
+                            <div>
                               <div class="more-info">
                                   <div class="col-md-6">
                                     <h5>Field Definition</h5>
@@ -279,15 +282,15 @@
                                       <input type="text" class="form-control" placeholder="Attribute 1">
                                     </div>
                                     <div class="form-group btn-grp">
-                                        <a href="javascript:void(0)" class="btn btn-std-sm bg-dark-grey">
+                                        <a href="javascript:void(0)" class="btn btn-edit bg-dark-grey">
                                           <i class="glyphicon glyphicon-menu-down" aria-hidden="true"></i>
                                           Move up
                                         </a>
-                                        <a href="javascript:void(0)" class="btn btn-std-sm bg-dark-grey">
+                                        <a href="javascript:void(0)" class="btn btn-edit bg-dark-grey">
                                           <i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
                                           Move down
                                         </a>
-                                        <a href="javascript:void(0)" class="btn btn-std-sm bg-red">
+                                        <a href="javascript:void(0)" class="btn btn-edit bg-red">
                                           <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
                                           Delete Field
                                         </a>
@@ -537,6 +540,7 @@
   <script src="js/vendor.js"></script>
 
   <script src="js/plugins.js"></script>
+      <script src="../plugins/jquery-ui/jquery-ui.js"></script>
 
   <script src="js/main.js"></script>
   <!-- configuration settings on process-designer.html -->
@@ -658,5 +662,6 @@
     });
   </script>
   <!-- end chart -->
+
 </body>
 
