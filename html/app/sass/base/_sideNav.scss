@@ -4,6 +4,7 @@
   border: 0;
   line-height: 1;
   width: 100%;
+  height: 100%;
   background: $navi;
   font-family: 'roboto', Tahoma, Arial, sans-serif;
   zoom: 1;
@@ -34,6 +35,11 @@
     position: relative;
     z-index: 500;
     float: left;
+    height: 100%;
+
+    &.has-sub {
+      height: 100%;
+    }
 
     .active {
       li {
@@ -89,9 +95,9 @@
 
           ul {
             top: -125px;
-            -webkit-box-shadow: -5px 5px 24px -7px rgba(0, 0, 0, 0.61);
-            -moz-box-shadow: -5px 5px 24px -7px rgba(0, 0, 0, 0.61);
-            box-shadow: -5px 5px 24px -7px rgba(0, 0, 0, 0.61);
+            -webkit-box-shadow: -9px 2px 5px -6px rgba(0, 0, 0, 0.46);
+            -moz-box-shadow: -9px 2px 5px -6px rgba(0, 0, 0, 0.46);
+            box-shadow: -9px 2px 5px -6px rgba(0, 0, 0, 0.46);
 
             li {
               position: relative;

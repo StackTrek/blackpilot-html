@@ -2,8 +2,8 @@ body {
   font-family: $font;
 }
 
-section {
-  overflow-x: hidden;
+section, div {
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -496,12 +496,12 @@ a {
   // height: 100%!important;
 
   @media (min-width: 1200px) {
-    min-height: 800px;
-    max-height: 1000px !important;
-    height: 1000px !important;
+    height: 100%;
   }
 
   ul {
+    height: 100%;
+
     a {
       color: #fff;
       font-size: 12px;
@@ -796,4 +796,11 @@ a {
       }
     }
   }
+}
+
+.side-nav {
+  position: fixed;
+  width: 228px;
+  z-index: 999;
+  height: 100%;
 }
