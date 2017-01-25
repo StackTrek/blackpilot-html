@@ -14,6 +14,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $heading;
 }
 
+h3 {
+  font-size: 20px;
+}
+
 p {
   font-size: 12px;
 }
@@ -794,6 +798,12 @@ a {
 }
 
 .table {
+  &.bordered {
+    td {
+      border: 1px solid #ddd;
+    }
+  }
+
   tr {
     td {
       vertical-align: middle !important;
