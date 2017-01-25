@@ -1,4 +1,16 @@
 .processes-designer {
+  .btn-trash {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+
+    i {
+      padding: 0 !important;
+      line-height: 25px;
+      font-size: 15px;
+    }
+  }
+
   .widget {
     .nav {
       float: left;
@@ -77,7 +89,7 @@
     background-color: $navi-drawer;
     width: 600px;
     height: 100vh;
-    color: $light-font;
+    color: #fff;
 
     .nav {
       font-size: 10px;
@@ -251,4 +263,11 @@
   padding: 5px 10px;
   padding-left: 4px;
   text-align: center;
+}
+
+.list-group-head {
+  a {
+    font-size: 13px;
+    color: #fff !important;
+  }
 }
