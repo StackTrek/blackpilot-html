@@ -1,4 +1,16 @@
 .processes-designer {
+  .btn-trash {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+
+    i {
+      padding: 0 !important;
+      line-height: 25px;
+      font-size: 15px;
+    }
+  }
+
   .widget {
     .nav {
       float: left;
@@ -18,7 +30,7 @@
     .btn-grps {
       a {
         i {
-          padding-right: 15px;
+          padding-right: 8px;
         }
       }
     }
@@ -75,9 +87,9 @@
   .form-settings {
     float: right;
     background-color: $navi-drawer;
-    width: 430px;
+    width: 600px;
     height: 100vh;
-    color: $light-font;
+    color: #fff;
 
     .nav {
       font-size: 10px;
@@ -86,7 +98,7 @@
         padding-left: 10px;
 
         a {
-          color: $light-font;
+          color: #fff;
           border-radius: 0px;
           border-bottom: 2px solid transparent;
           font-size: 12px;
@@ -198,9 +210,9 @@
           }
 
           input:checked + .slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
+            -webkit-transform: translateX(40px);
+            -ms-transform: translateX(40px);
+            transform: translateX(40px);
           }
 
           /* Rounded sliders */
@@ -232,5 +244,30 @@
 }
 
 .setting-config-panel {
-  height: 731px;
+  height: 100vh;
+}
+
+.btn-process-design {
+  width: 150px;
+  height: 30px;
+  padding: 5px 10px;
+  line-height: 20px;
+}
+
+.btn-content-container {
+  top: 5px;
+}
+
+.btn-add-variables {
+  width: 120px;
+  padding: 5px 10px;
+  padding-left: 4px;
+  text-align: center;
+}
+
+.list-group-head {
+  a {
+    font-size: 13px;
+    color: #fff !important;
+  }
 }
