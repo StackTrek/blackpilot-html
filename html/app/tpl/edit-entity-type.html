@@ -2,10 +2,9 @@
 <section class="marketplace">
   <div class="container">
     <div class="row">
-       @@include('./global/nav.html')
-
+      @@include('./global/nav.html')
       <!-- left column -->
-      <div class="col-lg-offset-2 col-lg-10 clear-pad">
+      <div class="col-lg-offset-2 col-lg-10 clear-pad content-holder">
         <div class="top-menu">
           <div class="row">
             <div class="col-md-3">
@@ -33,15 +32,18 @@
             <div class="col-md-2">
               <div class="profile">
                 <div class="pic"> <img src="img/icon-black.png" class="img-responsive" alt=""> </div>
-                <div class="name"> <h5 class="clear-marg">John Doe</h5> </div>
+                <div class="name">
+                  <h5 class="clear-marg">John Doe</h5> </div>
                 <div class="position"> Founder </div>
                 <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-              </div> <!-- profile -->
+              </div>
+              <!-- profile -->
             </div>
           </div>
-        </div> <!-- top menu -->
+        </div>
+        <!-- top menu -->
         <!-- top info -->
-      <div class="wrap">
+        <div class="wrap content-holder">
           <ol class="breadcrumb">
             <li><a href="javascript:void(0)">Home</a></li>
             <li><a href="javascript:void(0)" class="active">Edit Entity Type</a></li>
@@ -49,46 +51,146 @@
           <h3>Edit Entity Type</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reiciendis.</p>
           <!-- <div class="row"> -->
-           <!-- <div class="col-lg-12"> -->
-              <div class="row apps">
-                <div class="apps-link">
-                  <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" class="blue" href="#properties">Properties &amp; Fields</a></li>
-                    <li><a data-toggle="tab" href="#installed-apps">Installed Apps</a></li>
-                    <li><a data-toggle="tab" href="#updates">Available Updates</a></li>
-                  </ul>
-                  <div class="row">
-                    <div class="btn-grps">
-                        <a href="javascript:void(0)" class="btn btn-std bg-dark-grey">DISCARD</a>
-                        <a href="javascript:void(0)" class="btn btn-std bg-blue "><i class="fa fa-floppy-o" aria-hidden="true"></i>SAVE CHANGES</a>
+          <!-- <div class="col-lg-12"> -->
+          <div class="row apps">
+            <div class="apps-link">
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" class="blue" href="#properties">Properties &amp; Fields</a></li>
+                <li><a data-toggle="tab" href="#installed-apps">Installed Apps</a></li>
+                <li><a data-toggle="tab" href="#updates">Available Updates</a></li>
+              </ul>
+              <div class="row">
+                <div class="btn-grps">
+                  <a href="javascript:void(0)" class="btn btn-std bg-dark-grey">DISCARD</a>
+                  <a href="javascript:void(0)" class="btn btn-std bg-blue "><i class="fa fa-floppy-o" aria-hidden="true"></i>SAVE CHANGES</a>
+                </div>
+              </div>
+              <div class="tab-content">
+                <div id="properties" class="tab-pane fade in active">
+                  <div class="identity-type">
+                    <div class="row">
+                      <form action="">
+                        <div class="col-md-7 clear-pad">
+                          <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="text" class="form-control" placeholder="Holiday Request">
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label for="">Icon</label>
+                            <select class="form-control" placeholder="Please select">
+                              <option value="">johndoe@me.com</option>
+                            </select>
+                            <span class="input-group-addon glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                          </div>
+                        </div>
+                        <div class="col-md-12 clear-pad">
+                          <div class="row mar-neg-20">
+                            <div class="col-md-3">
+                              <div class="form-group">
+                                <label for="">Visible in Data Explorer?
+                                  <br>
+                                </label>
+                                <label class="switch">
+                                  <input type="checkbox" checked>
+                                  <div class="slider round"></div>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="form-group">
+                                <label for="">Editable in data editor?
+                                  <br>
+                                </label>
+                                <label class="switch">
+                                  <input type="checkbox" checked>
+                                  <div class="slider round"></div>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="form-group">
+                                <label for="">Keep History?
+                                  <br>
+                                </label>
+                                <label class="switch">
+                                  <input type="checkbox">
+                                  <div class="slider round"></div>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="form-group">
+                                <label for="">Data Searchable?
+                                  <br>
+                                </label>
+                                <label class="switch">
+                                  <input type="checkbox">
+                                  <div class="slider round"></div>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
                     </div>
-                  </div>
-
-                  <div class="tab-content">
-                    <div class="identity-type">
-                      <div id="properties" class="tab-pane fade in active">
-                        <div class="row">
-                            <form action="">
-                              <div class="col-md-7 clear-pad">
-                                <div class="form-group">
-                                  <label for="">Name</label>
-                                  <input type="text" class="form-control" placeholder="Holiday Request">
-                                </div>
+                    <!-- row -->
+                    <div class="row">
+                      <div class="details clearfix">
+                        <div class="col-md-3 clear-pad">
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <a href="javascript:void(0)" class="btn btn-std bg-blue">ADD NEW FIELD <i class="fa adjust-plus fa-plus"></i></a>
+                            </li>
+                            <!-- <form action=""> -->
+                            <li class="list-group-item">
+                              <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for Process" aria-describedby="basic-addon1">
+                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
                               </div>
-                              <div class="col-md-5">
+                            </li>
+                            <!-- </form> -->
+                            <li class="list-group-item">
+                              <a href="javascript:void(0)"><i class="fa fa-calendar" aria-hidden="true"></i> Start Time</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="javascript:void(0)"><i class="fa fa-calendar" aria-hidden="true"></i> End Time</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i> Requestor</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i> Status</a>
+                            </li>
+                            <li class="list-group-item">
+                              <a href="javascript:void(0)"><i class="fa fa-ellipsis-h" aria-hidden="true"></i> Attribute 1</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- .col-md-3 -->
+                        <div>
+                          <div class="more-info">
+                            <div class="col-md-6">
+                              <h5>Field Definition</h5>
+                              <form action="">
                                 <div class="form-group">
-                                 <label for="">Icon</label>
+                                  <label for="">Give this field a name</label>
+                                  <input type="text" class="form-control" placeholder="Attribute 1">
+                                </div>
+                                <div class="form-group">
+                                  <label for="">Define the data type of this field</label>
                                   <select class="form-control" placeholder="Please select">
-                                      <option value="">johndoe@me.com</option>
+                                    <option value="">String (127 Characters)</option>
                                   </select>
-                                   <span class="input-group-addon glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                  <span class="input-group-addon glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                                 </div>
-                              </div>
-                              <div class="col-md-12 clear-pad">
-                                <div class="row mar-neg-20">
-                                  <div class="col-md-3">
+                                <div class="form-group chk-box">
+                                  <div class="col-md-3 clear-pad">
                                     <div class="form-group">
-                                      <label for="">Visible in Data Explorer? <br></label>
+                                      <label for="">Value hould be unique?
+                                        <br>
+                                      </label>
                                       <label class="switch">
                                         <input type="checkbox" checked>
                                         <div class="slider round"></div>
@@ -97,336 +199,237 @@
                                   </div>
                                   <div class="col-md-3">
                                     <div class="form-group">
-                                      <label for="">Editable in data editor? <br></label>
+                                      <label for="">Is it a list?
+                                        <br>
+                                      </label>
                                       <label class="switch">
                                         <input type="checkbox" checked>
                                         <div class="slider round"></div>
                                       </label>
                                     </div>
                                   </div>
-                                  <div class="col-md-3">
-                                    <div class="form-group">
-                                      <label for="">Keep History? <br></label>
-                                      <label class="switch">
-                                        <input type="checkbox">
-                                        <div class="slider round"></div>
-                                      </label>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-3">
-                                    <div class="form-group">
-                                      <label for="">Data Searchable? <br></label>
-                                      <label class="switch">
-                                        <input type="checkbox">
-                                        <div class="slider round"></div>
-                                      </label>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
-                            </form>
-                        </div> <!-- row -->
-                        <div class="row">
-                          <div class="details">
-                            <div class="col-md-3 clear-pad">
-                              <ul class="list-group">
-                                <li class="list-group-item">
-                                  <a href="javascript:void(0)" class="btn btn-std bg-blue">ADD NEW FIELD <i class="fa fa-plus"></i></a>
-                                </li>
-                                <!-- <form action=""> -->
-                                <li class="list-group-item">
-                                    <div class="input-group">
-                                      <input type="text" class="form-control" placeholder="Search for Process" aria-describedby="basic-addon1">
-                                      <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
-                                    </div>
-                                </li>
-                                <!-- </form> -->
-                                <li class="list-group-item">
-                                  <a href="javascript:void(0)"><i class="fa fa-calendar" aria-hidden="true"></i> Start Time</a>
-                                </li>
-                                <li class="list-group-item">
-                                  <a href="javascript:void(0)"><i class="fa fa-calendar" aria-hidden="true"></i> End Time</a>
-                                </li>
-                                <li class="list-group-item">
-                                  <a href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i> Requestor</a>
-                                </li>
-                                <li class="list-group-item">
-                                  <a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i> Status</a>
-                                </li>
-                                <li class="list-group-item">
-                                  <a href="javascript:void(0)"><i class="fa fa-ellipsis-h" aria-hidden="true"></i> Attribute 1</a>
-                                </li>
-                              </ul>
-                            </div> <!-- .col-md-3 -->
-                            <div>
-                              <div class="more-info">
-                                  <div class="col-md-6">
-                                    <h5>Field Definition</h5>
-                                  <form action="">
-                                        <div class="form-group">
-                                            <label for="">Give this field a name</label>
-                                            <input type="text" class="form-control" placeholder="Attribute 1">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Define the data type of this field</label>
-                                            <select class="form-control" placeholder="Please select">
-                                                <option value="">String (127 Characters)</option>
-                                            </select>
-                                            <span class="input-group-addon glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                                        </div>
-                                        <div class="form-group chk-box">
-                                            <div class="col-md-3 clear-pad">
-                                              <div class="form-group">
-                                                <label for="">Value hould be unique? <br></label>
-                                                <label class="switch">
-                                                  <input type="checkbox" checked>
-                                                  <div class="slider round"></div>
-                                                </label>
-                                              </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                              <div class="form-group">
-                                                <label for="">Is it a list? <br></label>
-                                                <label class="switch">
-                                                  <input type="checkbox" checked>
-                                                  <div class="slider round"></div>
-                                                </label>
-                                              </div>
-                                            </div>
-                                        </div> <!-- chk-box -->
-                                  <!-- </di v> -->
-                                  <!-- <div class="col-md-7"> -->
-                                  <!-- <hr class="hr-div"> -->
-                                    <div class="form-group">
-                                      <label for="">Default Value</label>
-                                      <input type="text" class="form-control" placeholder="Attribute 1">
-                                    </div>
-                                    <div class="form-group btn-grp">
-                                        <a href="javascript:void(0)" class="btn btn-edit bg-dark-grey">
-                                          <i class="glyphicon glyphicon-menu-down" aria-hidden="true"></i>
-                                          Move up
-                                        </a>
-                                        <a href="javascript:void(0)" class="btn btn-edit bg-dark-grey">
-                                          <i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
-                                          Move down
-                                        </a>
-                                        <a href="javascript:void(0)" class="btn btn-edit bg-red">
-                                          <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
-                                          Delete Field
-                                        </a>
-                                      </div>
-                                  </form>
-                                  </div>
-                                  <div class="col-md-3">
-                                    <h5>Data Source</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est corporis cum vero nulla, voluptatem facere.</p>
-                                    <form action="">
-                                      <div class="form-group clear-marg">
-                                        <label for="">Use a Data Source?</label>
-                                        <label class="switch">
-                                          <input type="checkbox" checked>
-                                          <div class="slider round"></div>
-                                        </label>
-                                      </div>
-                                    </form>
-                                  </div>
-
-
-                              </div>
-                            </div>
-                          </div><!-- details -->
-                        </div> <!-- row -->
-                      </div> <!-- properties-->
-                    </div> <!-- identity-type -->
-                    <div id="installed-apps" class="tab-pane fade">
-                      <div class="identity-type">
-                        <div class="row">
-                          <div class="col-md-6 right-tab-info">
-                            <h3>My Apps</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                          </div>
-                          <div class="col-md-6 left-tab-info">
-                            <form action="">
-                              <div class="col-md-7">
+                                <!-- chk-box -->
+                                <!-- </di v> -->
+                                <!-- <div class="col-md-7"> -->
+                                <!-- <hr class="hr-div"> -->
                                 <div class="form-group">
-                                  <div class="input-group">
-                                      <input type="text" placeholder="Search your Apps" class="form-control" id="email">
-                                      <span class = "input-group-addon"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></span>
-                                  </div>
+                                  <label for="">Default Value</label>
+                                  <input type="text" class="form-control" placeholder="Attribute 1">
                                 </div>
-                              </div>
-                              <div class="col-md-5">
-                                <div class="form-group">
-                                  <a href="javascript:void(0)" class="btn btn-std bg-blue">GET MORE APPLICATION <i class="fa fa-plus" aria-hidden="true"></i></a>
+                                <div class="form-group btn-grp">
+                                  <a href="javascript:void(0)" class="btn btn-edit bg-dark-grey">
+                                    <i class="glyphicon glyphicon-menu-down" aria-hidden="true"></i> Move up
+                                  </a>
+                                  <a href="javascript:void(0)" class="btn btn-edit bg-dark-grey">
+                                    <i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i> Move down
+                                  </a>
+                                  <a href="javascript:void(0)" class="btn btn-edit bg-red">
+                                    <i class="glyphicon glyphicon-trash" aria-hidden="true"></i> Delete Field
+                                  </a>
                                 </div>
-                              </div>
-                            </form>
-                          </div>
-                        </div> <!-- first row -->
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-3">
-                          <div class="side-sub-menu">
-                            <div class="list-group">
-                              <a href="#" class="list-group-item active">
-                                <i class="fa fa-stop grey" aria-hidden="true"></i>
-                                Display All
-                              </a>
-                              <a href="#" class="list-group-item">
-                                <i class="fa fa-stop red" aria-hidden="true"></i>
-                                Marketing
-                              </a>
-                              <a href="#" class="list-group-item">
-                                <i class="fa fa-stop green" aria-hidden="true"></i>
-                                Manufacturing
-                              </a>
-                              <a href="#" class="list-group-item">
-                                <i class="fa fa-stop purple" aria-hidden="true"></i>
-                                Sustainability
-                              </a>
-                              <a href="#" class="list-group-item">
-                                <i class="fa fa-stop pink" aria-hidden="true"></i>
-                                Supply Chain Management
-                              </a>
-                              <a href="#" class="list-group-item">
-                                <i class="fa fa-stop cyan" aria-hidden="true"></i>
-                                Financial
-                              </a>
-                              <a href="#" class="list-group-item">
-                                <i class="fa fa-stop yellow" aria-hidden="true"></i>
-                                Human Capital
-                              </a>
-                              <a href="#" class="list-group-item disable">
-                                <i class="fa fa-stop off-white" aria-hidden="true"></i>
-                                Sales
-                              </a>
-                              <a href="#" class="list-group-item disable">
-                                <i class="fa fa-stop off-white" aria-hidden="true"></i>
-                                Purchasing &amp; Procurement
-                              </a>
-                              <a href="#" class="list-group-item disable">
-                                <i class="fa fa-stop off-white" aria-hidden="true"></i>
-                                E-commerse
-                              </a>
-                              <a href="#" class="list-group-item disable">
-                                <i class="fa fa-stop off-white" aria-hidden="true"></i>
-                                Quality Management
-                              </a>
+                              </form>
                             </div>
-                          </div>
-                        </div> <!-- first col -->
-                        <div class="col-lg-9">
-                          <div class="flex-grid app-grid">
-                            <div class="flex-card app-card">
-                              <div class="app-icon">
-                                <div class="icon-globe-white"></div>
-                              </div>
-                              <div class="app-details">
-                                <h3>Holiday Request</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                              </div>
-                              <div class="config">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                                <!-- <a href="" id="popoverData" class="btn" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover"><i class="fa fa-cog" aria-hidden="true"></i></a> -->
-                              </div>
-                            </div>
-
-                            <div class="flex-card app-card">
-                              <div class="app-icon">
-                                <div class="icon-environmen-white"></div>
-                              </div>
-                              <div class="app-details">
-                                <h3>Holiday Request</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                              </div>
-                              <div class="config">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                              </div>
-                            </div>
-
-                            <div class="flex-card app-card">
-                              <div class="app-icon">
-                                <div class="icon-product-white"></div>
-                              </div>
-                              <div class="app-details">
-                                <h3>Holiday Request</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                              </div>
-                              <div class="config">
-                                <a href="javascript:void(0)"><i class="fa fa-cog" aria-hidden="true"></i></a>
-                              </div>
-                            </div>
-                          </div><!-- app-grid -->
-                          <div class="flex-grid app-grid">
-                            <div class="flex-card app-card">
-                              <div class="app-icon">
-                                <div class="icon-money-white"></div>
-                              </div>
-                              <div class="app-details">
-                                <h3>Holiday Request</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                              </div>
-                              <div class="config">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                                <!-- <a href="" id="popoverData" class="btn" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover"><i class="fa fa-cog" aria-hidden="true"></i></a> -->
-                              </div>
-                            </div>
-
-                            <div class="flex-card app-card">
-                              <div class="app-icon">
-                                <div class="icon-plane-white"></div>
-                              </div>
-                              <div class="app-details">
-                                <h3>Holiday Request</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                              </div>
-                              <div class="config">
-                                <i class="fa fa-cog" aria-hidden="true"></i>
-                              </div>
-                            </div>
-
-                            <div class="flex-card app-card">
-                              <div class="app-icon">
-                                <div class="icon-stat-white"></div>
-                              </div>
-                              <div class="app-details">
-                                <h3>Holiday Request</h3>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                              </div>
-                              <div class="config">
-                                <a href="javascript:void(0)"><i class="fa fa-cog" aria-hidden="true"></i></a>
-                              </div>
-                            </div>
-                          </div><!-- app-grid -->
-                        </div><!-- enc col -->
-                      </div><!-- 2nd row -->
-                      <div class="get-more-apps">
-                        <div class="row more-card">
-                          <div class="col-md-7">
-                            <div class="more-icon">
-                              <a href="javascript:void(0)"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
-                            </div>
-                          </div>
-                          <div class="col-md-5">
-                            <div class="more-details">
-                              <h3>Get More Apps</h3>
-                              <p>You can get more apps for your business needs. Click here to go to the Marketplace.</p>
+                            <div class="col-md-3">
+                              <h5>Data Source</h5>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum est corporis cum vero nulla, voluptatem facere.</p>
+                              <form action="">
+                                <div class="form-group clear-marg">
+                                  <label for="">Use a Data Source?</label>
+                                  <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <div class="slider round"></div>
+                                  </label>
+                                </div>
+                              </form>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div> <!-- installed apps -->
-                    <!-- <div id="updates" class="tab-pane fade">
+                      <!-- details -->
+                    </div>
+                    <!-- row -->
+                  </div>
+                </div>
+                <!-- properties-->
+                <div id="installed-apps" class="tab-pane fade">
+                  <div class="identity-type">
+                    <div class="row">
+                      <div class="col-md-6 right-tab-info">
+                        <h3>My Apps</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                      </div>
+                      <div class="col-md-6 left-tab-info">
+                          <ul class="search-group">
+                            <li>
+
+                                  <input type="text" placeholder="Search your Apps" class="form-control" id="email">
+
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="btn btn-std bg-blue">GET MORE APPLICATION </a>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
+                    <!-- first row -->
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <div class="side-sub-menu">
+                        <div class="list-group">
+                          <a href="#" class="list-group-item active">
+                            <i class="fa fa-stop grey" aria-hidden="true"></i> Display All
+                          </a>
+                          <a href="#" class="list-group-item">
+                            <i class="fa fa-stop red" aria-hidden="true"></i> Marketing
+                          </a>
+                          <a href="#" class="list-group-item">
+                            <i class="fa fa-stop green" aria-hidden="true"></i> Manufacturing
+                          </a>
+                          <a href="#" class="list-group-item">
+                            <i class="fa fa-stop purple" aria-hidden="true"></i> Sustainability
+                          </a>
+                          <a href="#" class="list-group-item">
+                            <i class="fa fa-stop pink" aria-hidden="true"></i> Supply Chain Management
+                          </a>
+                          <a href="#" class="list-group-item">
+                            <i class="fa fa-stop cyan" aria-hidden="true"></i> Financial
+                          </a>
+                          <a href="#" class="list-group-item">
+                            <i class="fa fa-stop yellow" aria-hidden="true"></i> Human Capital
+                          </a>
+                          <a href="#" class="list-group-item disable">
+                            <i class="fa fa-stop off-white" aria-hidden="true"></i> Sales
+                          </a>
+                          <a href="#" class="list-group-item disable">
+                            <i class="fa fa-stop off-white" aria-hidden="true"></i> Purchasing &amp; Procurement
+                          </a>
+                          <a href="#" class="list-group-item disable">
+                            <i class="fa fa-stop off-white" aria-hidden="true"></i> E-commerse
+                          </a>
+                          <a href="#" class="list-group-item disable">
+                            <i class="fa fa-stop off-white" aria-hidden="true"></i> Quality Management
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- first col -->
+                    <div class="col-lg-9">
+                      <div class="flex-grid app-grid">
+                        <div class="flex-card app-card">
+                          <div class="app-icon">
+                            <div class="icon-globe-white"></div>
+                          </div>
+                          <div class="app-details">
+                            <h3>Holiday Request</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="config">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <!-- <a href="" id="popoverData" class="btn" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover"><i class="fa fa-cog" aria-hidden="true"></i></a> -->
+                          </div>
+                        </div>
+                        <div class="flex-card app-card">
+                          <div class="app-icon">
+                            <div class="icon-environmen-white"></div>
+                          </div>
+                          <div class="app-details">
+                            <h3>Holiday Request</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="config">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="flex-card app-card">
+                          <div class="app-icon">
+                            <div class="icon-product-white"></div>
+                          </div>
+                          <div class="app-details">
+                            <h3>Holiday Request</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="config">
+                            <a href="javascript:void(0)"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- app-grid -->
+                      <div class="flex-grid app-grid">
+                        <div class="flex-card app-card">
+                          <div class="app-icon">
+                            <div class="icon-money-white"></div>
+                          </div>
+                          <div class="app-details">
+                            <h3>Holiday Request</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="config">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <!-- <a href="" id="popoverData" class="btn" data-content="Popover with data-trigger" rel="popover" data-placement="bottom" data-original-title="Title" data-trigger="hover"><i class="fa fa-cog" aria-hidden="true"></i></a> -->
+                          </div>
+                        </div>
+                        <div class="flex-card app-card">
+                          <div class="app-icon">
+                            <div class="icon-plane-white"></div>
+                          </div>
+                          <div class="app-details">
+                            <h3>Holiday Request</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="config">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="flex-card app-card">
+                          <div class="app-icon">
+                            <div class="icon-stat-white"></div>
+                          </div>
+                          <div class="app-details">
+                            <h3>Holiday Request</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="config">
+                            <a href="javascript:void(0)"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- app-grid -->
+                    </div>
+                    <!-- enc col -->
+                  </div>
+                  <!-- 2nd row -->
+                  <div class="get-more-apps">
+                    <div class="row more-card">
+                      <div class="col-md-7">
+                        <div class="more-icon">
+                          <a href="javascript:void(0)"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="more-details">
+                          <h3>Get More Apps</h3>
+                          <p>You can get more apps for your business needs. Click here to go to the Marketplace.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- installed apps -->
+                <!-- <div id="updates" class="tab-pane fade">
                       <h3>Available Updates</h3>
                       <p>Sed ut perspiciatis unde omnis iste natus.</p>
                     </div> -->
-                  </div>
-                </div> <!-- apps-link -->
               </div>
-            <!-- </div> col-12 -->
+            </div>
+            <!-- apps-link -->
+          </div>
+          <!-- </div> col-12 -->
           <!-- </div> -->
-      </div> <!-- wrap right column -->
+        </div>
+        <!-- wrap right column -->
+      </div>
     </div>
-  </div>
 </section>
 @@include('./global/footer.html')
