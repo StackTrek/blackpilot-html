@@ -148,6 +148,7 @@
     .list-group {
       background-color: #f3f3f3 !important;
       border: 1px solid #dcdfe2;
+      padding-bottom: 25px;
 
       // border-bottom: none!important;
 
@@ -172,6 +173,7 @@
 
         &:nth-child(1), &:nth-child(2) {
           margin: 0px;
+          border: none;
         }
 
         &:nth-child(n+3) {
@@ -263,5 +265,41 @@
 
     //more-info
 
+  }
+}
+
+.adjust-plus {
+  position: absolute;
+  right: 15px;
+  top: 22px;
+}
+
+.search-group {
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+
+  li {
+    display: inline-block;
+    margin: 10px;
+
+    a {
+      height: 37px;
+      width: 160px;
+      line-height: 25px;
+    }
+  }
+
+  input {
+    width: 100% !important;
+  }
+}
+
+.app-card {
+  .config {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
   }
 }

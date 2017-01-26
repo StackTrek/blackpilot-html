@@ -192,9 +192,14 @@
               background-color: #f8f8f8;
               right: 0;
               top: 22px;
+              width: 90px;
+              height: 90px;
               border-radius: 50%;
 
               a {
+                padding: 0;
+                line-height: 90px;
+
                 i {
                   color: #3e3e3e;
                   background-color: #fff;
