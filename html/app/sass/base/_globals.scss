@@ -811,6 +811,10 @@ a {
 }
 
 .table {
+  th {
+    border: 1px solid #ddd;
+  }
+
   &.bordered {
     td {
       border: 1px solid #ddd;
@@ -823,6 +827,7 @@ a {
 
       &.actions {
         text-align: right;
+        width: 210px;
       }
     }
   }
