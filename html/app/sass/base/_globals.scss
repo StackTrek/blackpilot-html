@@ -223,6 +223,7 @@ a {
   color: $dark-font !important;
   border-radius: 3px !important;
   padding-bottom: 4px;
+  width: 100%;
 
   &:hover {
     color: $btn-text;
@@ -811,18 +812,25 @@ a {
 }
 
 .table {
+  th {
+    border: 1px solid $light-font;
+    text-align: center;
+  }
+
   &.bordered {
     td {
-      border: 1px solid #ddd;
+      border: 1px solid $light-font;
     }
   }
 
   tr {
     td {
       vertical-align: middle !important;
+      text-align: center;
 
       &.actions {
         text-align: right;
+        width: 210px;
       }
     }
   }

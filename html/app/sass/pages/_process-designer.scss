@@ -46,7 +46,7 @@
     background-color: $navi;
 
     .nav-header {
-      padding: 20px;
+      padding: 10px 20px;
       background-color: $navi-header;
 
       a {
@@ -139,7 +139,7 @@
           border: 3px solid transparent;
           border-radius: 0px;
           padding-right: 20px;
-          color: $light-font;
+          color: #fff;
           font-size: 13px;
 
           &:hover {
@@ -259,7 +259,7 @@
 }
 
 .btn-add-variables {
-  width: 120px;
+  width: 125px;
   padding: 5px 10px;
   padding-left: 4px;
   text-align: center;
@@ -267,7 +267,25 @@
 
 .list-group-head {
   a {
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: bold;
     color: #fff !important;
+  }
+}
+
+.top-widget-designer {
+  margin-top: 10px !important;
+}
+
+.discard-top {
+  text-align: right;
+}
+
+.display-info-field {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  input {
+    border: 1px $light-font solid;
   }
 }
