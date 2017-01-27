@@ -47,15 +47,18 @@
     background-color: $navi;
 
     .nav-header {
-      padding: 8px 20px;
-      padding-bottom: 7px;
+      padding: 0 20px;
+      height: 50px;
       background-color: $navi-header;
 
       a {
         color: $light-font;
+        line-height: 53px;
 
         i {
-          float: right;
+          @include centerer(false, true);
+
+          right: 10px;
         }
       }
     }
@@ -96,16 +99,19 @@
 
     .nav {
       font-size: 10px;
+      height: 50px;
 
       li {
         padding-left: 10px;
+        height: 50px;
 
         a {
           color: #fff;
           border-radius: 0px;
-          border-bottom: 2px solid transparent;
           font-size: 12px;
-          padding-bottom: 4px;
+          display: block;
+          height: 100%;
+          line-height: 35px;
 
           &:hover, &:active, &:focus {
             background-color: transparent !important;
