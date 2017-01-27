@@ -41,12 +41,14 @@
     float: right;
     color: $light-font;
     width: 277px;
-    height: 100%;
+    height: 120vh;
     font-size: 13px;
+    margin-bottom: 100px;
     background-color: $navi;
 
     .nav-header {
-      padding: 10px 20px;
+      padding: 8px 20px;
+      padding-bottom: 7px;
       background-color: $navi-header;
 
       a {
@@ -88,7 +90,8 @@
     float: right;
     background-color: $navi-drawer;
     width: 600px;
-    height: 100vh;
+    height: 120vh;
+    margin-bottom: 100px;
     color: #fff;
 
     .nav {
@@ -102,6 +105,7 @@
           border-radius: 0px;
           border-bottom: 2px solid transparent;
           font-size: 12px;
+          padding-bottom: 4px;
 
           &:hover, &:active, &:focus {
             background-color: transparent !important;
@@ -288,4 +292,10 @@
   input {
     border: 1px $light-font solid;
   }
+}
+
+a.title-heading {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
 }
