@@ -831,11 +831,9 @@ a {
     td {
       border-top: none !important;
       vertical-align: middle !important;
-      text-align: center;
       border: 1px solid #ddd;
 
       &.actions {
-        text-align: right;
         width: 210px;
       }
     }
@@ -851,5 +849,4 @@ a {
 
 .form-control {
   box-shadow: none !important;
-  border: 1px solid #ddd !important;
 }
