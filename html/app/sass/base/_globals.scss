@@ -813,25 +813,26 @@ a {
 
 .table {
   th {
-    border: 1px solid #ddd;
-    text-align: center;
+    border: 1px solid #999fa5;
+    text-align: left;
     border-top: none !important;
   }
 
   &.bordered {
     td {
-      border: 1px solid #ddd;
+      border: 1px solid #999fa5;
     }
   }
 
   tr {
-    border-top: 1px solid #ddd !important;
-    border: 1px solid #ddd;
+    border-top: 1px solid #999fa5 !important;
+    border: 1px solid #999fa5;
 
     td {
       border-top: none !important;
       vertical-align: middle !important;
-      border: 1px solid #ddd;
+      border: 1px solid #999fa5;
+      padding-bottom: 7px !important;
 
       &.actions {
         width: 210px;
@@ -849,4 +850,8 @@ a {
 
 .form-control {
   box-shadow: none !important;
+}
+
+.dark-bordered {
+  border-color: #999fa5 !important;
 }
