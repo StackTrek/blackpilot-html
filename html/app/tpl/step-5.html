@@ -1,150 +1,58 @@
-<!doctype html>
-<html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gulp Starter Kit</title>
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <!-- Place favicon.ico in the root directory -->
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css css/main.css -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild -->
-    <!-- build:js js/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-
-  <body>
-      <!--[if lt IE 10]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
-
+@@include('./global/header.html')
+<div class="walkthrough-widget left-arrow step-5">
+ <div class="step-title">
+    <i>5</i> <span>CONFIGURE THE APP</span>
+ </div>
+ <div class="step-content">
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur doloremque qui sed voluptatum sint, eligendi non quidem eius sit, quam fugiat debitis officia amet aliquid beatae impedit sunt, excepturi alias!
+ </div>
+ <div class="button-widget-holder">
+   <a href="javascript:void(0)" class="btn-edit bg-blue">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+ </div>
+</div>
 <section class="marketplace">
   <div class="container">
     <div class="row">
-      <div class="col-lg-2 bg-dash-menu clear-pad">
-        <div class="logo">
-          <img src="img/icon-black.png" alt="">
-        </div>
-        <div class="side-menu">
-          <div class="list-group">
-            <ul>
-              <li class="list-group-item">
-                <a href="javascript:void(0)" >
-                  <i class="fa fa-list-alt" aria-hidden="true"></i>
-                  <i class="fa fa-plus-circle i-float" aria-hidden="true"></i>
-                  New Process
-                </a>
-                <ul>
-                  <li>
-                    <form action="">
-                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for Process" aria-describedby="basic-addon1">
-                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
-                      </div>
-                    </form>
-                    <div>
-                      <h4>
-                        <i class="fa fa-cogs" aria-hidden="true"></i>
-                        Process Groups
-                      </h4>
-                        <p>
-                          Oops, theres nothing here. Please go to the BlackPilot Marketplace and find apps that you might need.
-                          <div class="access">
-                            <a href="javascript:void(0)" class="btn btn-std bg-blue">GO TO MARKETPLACE <i class="fa fa-plus" aria-hidden="true"></i></a>
-                          </div>
-                        </p>
-                    </div>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)" class="list-group-item"> Holiday </a>
-                    <ul>
-                      <li>
-                        <a href="javascript:void(0)"> Holiday </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)" class="list-group-item"> Holiday </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="list-group-item active">
-                <a href="dashboard.html">
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  Dashboard
-                </a>
-              </li>
-              <li class="list-group-item">
-                <a href="marketplace.html">
-                  <i class="fa fa-credit-card" aria-hidden="true"></i>
-                  Marketplace
-                </a>
-              </li>
-              <li class="list-group-item">
-                <a href="#">
-                  <i class="fa fa-file-o" aria-hidden="true"></i>
-                  Portal Management
-                </a>
-              </li>
-              <li class="list-group-item">
-                <a href="#">
-                  <i class="fa fa-comments-o" aria-hidden="true"></i>
-                  Help &amp; Support
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div> <!-- sidemenu -->
-      </div> <!-- left column -->
-      <div class="col-lg-10 clear-pad">
+      @@include('./global/nav.html')
+
+      <!-- left column -->
+      <div class="col-lg-offset-2 col-lg-10 clear-pad content-holder">
         <div class="top-menu">
           <div class="row">
-            <div class="col-lg-3">
-              <div class="profile">
-                <div class="pic">
-                  <img src="img/icon-black.png" class="img-responsive" alt="">
-                </div>
-                <div class="name">
-                  John Doe
-                </div>
-                <div class="position">
-                  Founder
-                </div>
-
-              </div> <!-- profile -->
-              <a href="javascript:void(0)"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
-            </div>
-            <div class="col-lg-7 clear-pad">
-              <div class="form-link">
-                <form action="">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search Resources">
-                    <div class="input-group-btn">
-                      <i class="fa fa-search" aria-hidden="true"></i>
-                    </div>
-                  </div>
-                </form>
+            <div class="col-md-3">
+              <div class="company-info">
+                <h5 class="clear-marg">Simulation Subscription</h5>
+                <p>Startup Garage</p>
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
               </div>
             </div>
-            <div class="col-lg-2">
-              <ul class="nav navbar-nav">
+            <div class="col-md-3">
+              <form action="">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search Resources" aria-describedby="basic-addon1">
+                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <ul class="nav navbar-nav  pull-right">
                 <li><a href="javascript:void(0)"><i class="fa fa-bell" aria-hidden="true"></i><span class="badge">1</span></a></li>
                 <li><a href="javascript:void(0)"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
                 <li><a href="javascript:void(0)"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
               </ul>
             </div>
+            <div class="col-md-2">
+              <div class="profile">
+                <div class="pic"> <img src="img/icon-black.png" class="img-responsive" alt=""> </div>
+                <div class="name"> <h5 class="clear-marg">John Doe</h5> </div>
+                <div class="position"> Founder </div>
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+              </div> <!-- profile -->
+            </div>
           </div>
         </div> <!-- top menu -->
         <!-- top info -->
-          <div class="col-lg-12">
+          <div class="col-lg-12 content-holder">
             <div class="row info">
               <div class="col-lg-6">
                 <div class="left-info">
@@ -156,14 +64,6 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reiciendis.</p>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="right-info">
-                  <h3>Get BlackPilot Training and Education</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ullam natus adipisci explicabo vero delectus, tenetur totam iste est libero.</p>
-                  <a href="javascript:void(0)" class="btn btn-small bg-trans">LEARN MORE <i class="fa fa-plus pull-right" aria-hidden="true"></i></a>
-                  <a href="javascript:void(0)" class="dismiss">DISMISS</a>
-                </div>
-              </div>
             </div>
           </div>
         <!-- top info -->
@@ -171,13 +71,13 @@
           <div class="row apps">
             <div class="apps-link">
               <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#marketplace">Marketplace</a></li>
-                <li><a data-toggle="tab" href="#installed-apps">Installed Apps</a></li>
+                <li ><a data-toggle="tab" href="#marketplace">Marketplace</a></li>
+                <li class="active"><a data-toggle="tab" href="#installed-apps">Installed Apps</a></li>
                 <li><a data-toggle="tab" href="#updates">Available Updates</a></li>
               </ul>
 
               <div class="tab-content">
-                <div id="marketplace" class="tab-pane fade in active">
+                <div id="marketplace" class="tab-pane fade  ">
                   <div class="row">
                     <div class="col-md-5 left-tab-info">
                       <h3>App Categories</h3>
@@ -216,7 +116,7 @@
                         <div class="card-details">
                           <h3 class="card-title">Manufacturing</h3>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
-                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS <i class="fa fa-plus" aria-hidden="true"></i></a>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS </a>
                         </div>
                       </div>
                       <div class="card">
@@ -230,7 +130,7 @@
                           <h3 class="card-title">Quality Management</h3>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
                           <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS
-                          <i class="fa fa-plus" aria-hidden="true"></i>
+
                           </a>
                         </div>
                       </div>
@@ -245,7 +145,7 @@
                           <h3 class="card-title">Supply Chain Management</h3>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
                           <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS
-                          <i class="fa fa-plus" aria-hidden="true"></i>
+
                           </a>
                         </div>
                       </div>
@@ -260,7 +160,7 @@
                           <h3 class="card-title">Financial</h3>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
                           <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS
-                          <i class="fa fa-plus" aria-hidden="true"></i>
+
                           </a>
                         </div>
                       </div>
@@ -275,7 +175,7 @@
                           <h3 class="card-title">Marketing</h3>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
                           <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS
-                          <i class="fa fa-plus" aria-hidden="true"></i>
+
                           </a>
                         </div>
                       </div>
@@ -292,7 +192,7 @@
                         <div class="card-details">
                           <h3 class="card-title">Sales</h3>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
-                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS <i class="fa fa-plus" aria-hidden="true"></i></a>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS </a>
                         </div>
                       </div>
                       <div class="card">
@@ -305,7 +205,7 @@
                         <div class="card-details">
                           <h3 class="card-title">Purchasing &amp; Procurement</h3>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
-                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS <i class="fa fa-plus" aria-hidden="true"></i></a>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS </a>
                         </div>
                       </div>
                       <div class="card">
@@ -318,7 +218,7 @@
                         <div class="card-details">
                           <h3 class="card-title">E-Commerce</h3>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
-                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS <i class="fa fa-plus" aria-hidden="true"></i></a>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS </a>
                         </div>
                       </div>
                       <div class="card">
@@ -331,7 +231,7 @@
                         <div class="card-details">
                           <h3 class="card-title">Sustainability</h3>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
-                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS <i class="fa fa-plus" aria-hidden="true"></i></a>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS </a>
                         </div>
                       </div>
                       <div class="card">
@@ -344,13 +244,13 @@
                         <div class="card-details">
                           <h3 class="card-title">Human capital</h3>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, beatae.</p>
-                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS <i class="fa fa-plus" aria-hidden="true"></i></a>
+                          <a href="javascript:void(0)" class="btn btn-thumb bg-blue">VIEW APPS </a>
                         </div>
                       </div>
                     </div> <!-- flex-grid -->
                   </div>
                 </div> <!-- home -->
-                <div id="installed-apps" class="tab-pane fade">
+                <div id="installed-apps" class="active tab-pane in fade">
                   <div class="row">
                     <div class="col-md-6 right-tab-info">
                       <h3>My Apps</h3>
@@ -361,14 +261,14 @@
                         <div class="col-md-7">
                           <div class="form-group">
                             <div class="input-group">
-                                <input type="text" placeholder="Search your Apps" class="form-control" id="email">
-                                <span class = "input-group-addon"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></span>
+                              <input type="text" class="form-control" placeholder="Search for Process" aria-describedby="basic-addon1">
+                              <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
                             </div>
                           </div>
                         </div>
                         <div class="col-md-5">
-                          <div class="form-group">
-                            <a href="javascript:void(0)" class="btn btn-std bg-blue">GET MORE APPLICATION <i class="fa fa-plus" aria-hidden="true"></i></a>
+                          <div class="form-group get-application-button">
+                            <a href="javascript:void(0)" class="btn btn-std bg-blue text-center">GET MORE APPLICATION</a>
                           </div>
                         </div>
                       </form>
@@ -538,155 +438,4 @@
     </div>
   </div>
 </section>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 side-foot">&nbsp;</div>
-        <div class="col-lg-10 foot-wrap">
-          <div class="col-lg-4 copy">
-              Copyright &copy;2014 BlackPilot. All Rights Reserved
-            </div>
-            <div class="col-lg-8 links">
-              <ul class="nav navbar-nav">
-                <li><a href="javascript:void(0)">About Us</a></li>
-                <li><a href="javascript:void(0)">Help</a></li>
-                <li><a href="javascript:void(0)">Contact</a></li>
-                <li><a href="javascript:void(0)">Fees</a></li>
-                <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-                <li><a href="javascript:void(0)">Privacy</a></li>
-                <li><a href="javascript:void(0)">Legal</a></li>
-              </ul>
-            </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-
-  </script>
-
-  <!-- build:js js/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/chart.js/dist/Chart.js"></script>
-    <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:js js/plugins.js -->
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-  <!-- endbuild -->
-
-  <!-- build:js js/main.js -->
-  <script src="js/main.js"></script>
-  <!-- endbuild -->
-
-  <!-- chart -->
-  <script>
-    var ctx = document.getElementById("myChart");
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ["Jan 1 - Mon", "Jan 2 - Tue", "Jan 3 - Wed", "Jan 4 - Thu", "Jan 5 - Fri", "Jan 6 - Sat", "Jan 8 - Sun"],
-            datasets: [
-                {
-                  type: 'bar',
-                  label: 'John Doe',
-                  backgroundColor: [
-                      'rgba(255, 132, 158, 0.8)',
-                      'rgba(255, 132, 158, 0.8)',
-                      'rgba(255, 132, 158, 0.8)',
-                      'rgba(255, 132, 158, 0.8)',
-                      'rgba(255, 132, 158, 0.8)',
-                      'rgba(255, 132, 158, 0.8)',
-                      'rgba(255, 132, 158, 0.8)'
-                  ],
-                  borderColor: [
-                      'rgba(255, 128, 155,1)',
-                      'rgba(255, 128, 155, 1)',
-                      'rgba(255, 128, 155, 1)',
-                      'rgba(255, 128, 155, 1)',
-                      'rgba(255, 128, 155, 1)',
-                      'rgba(255, 128, 155, 1)',
-                      'rgba(255, 128, 155, 1)'
-                  ],
-                  borderWidth: 1,
-                  data: [10, 20, 30, 5, 13, 25, 23],
-                },
-                {
-                  type: 'bar',
-                  label: 'Mark Nirew',
-                  data: [12, 18, 29, 30, 12, 24, 12],
-                  backgroundColor: [
-                      'rgba(252, 214, 122, 0.8)',
-                      'rgba(252, 214, 122, 0.8)',
-                      'rgba(252, 214, 122, 0.8)',
-                      'rgba(252, 214, 122, 0.8)',
-                      'rgba(252, 214, 122, 0.8)',
-                      'rgba(252, 214, 122, 0.8)',
-                      'rgba(252, 214, 122, 0.8)'
-                  ],
-                  borderColor: [
-                      'rgba(251, 200, 80,1)',
-                      'rgba(251, 200, 80, 1)',
-                      'rgba(251, 200, 80, 1)',
-                      'rgba(251, 200, 80, 1)',
-                      'rgba(251, 200, 80, 1)',
-                      'rgba(251, 200, 80, 1)',
-                      'rgba(251, 200, 80, 1)'
-                  ],
-                  borderWidth: 1,
-                },
-                {
-                  type: 'bar',
-                  label: 'Alden Williams',
-                  data: [9, 21, 28, 18, 29, 30, 24],
-                  backgroundColor: [
-                      'rgba(75, 192, 192, 0.8)',
-                      'rgba(75, 192, 192, 0.8)',
-                      'rgba(75, 192, 192, 0.8)',
-                      'rgba(75, 192, 192, 0.8)',
-                      'rgba(75, 192, 192, 0.8)',
-                      'rgba(75, 192, 192, 0.8)',
-                      'rgba(75, 192, 192, 0.8)'
-                  ],
-                  borderColor: [
-                      'rgba(60, 170, 170,1)',
-                      'rgba(60, 170, 170, 1)',
-                      'rgba(60, 170, 170, 1)',
-                      'rgba(60, 170, 170, 1)',
-                      'rgba(60, 170, 170, 1)',
-                      'rgba(60, 170, 170, 1)',
-                      'rgba(60, 170, 170, 1)'
-                  ],
-                  borderWidth: 1,
-                  // data: [65, 59, 80, 81, 56, 55, 40,1000],
-                }
-            ]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
-            }
-        }
-    });
-  </script>
-  <!-- end chart -->
-</body>
-
+@@include('./global/footer.html')

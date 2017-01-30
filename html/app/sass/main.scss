@@ -1,59 +1,54 @@
 $icon-font-path: '../fonts/';
 
-
 /*----- VENDORS-------
 ----------------------*/
 
-    // bower:scss
-    @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-    @import "bower_components/font-awesome/scss/font-awesome.scss";
-    // endbower
+// bower:scss
+@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'bower_components/font-awesome/scss/font-awesome.scss';
 
+// endbower
 
 /*----- FONTS-------
 ----------------------*/
-@import "base/fonts";
+@import 'base/fonts';
 
 /*-----VARIABLES----
 -----------------------*/
-@import "base/variables";
-
+@import 'base/variables';
 
 /*-----MIX-INS AND PLACEHOLDER -------
 -----------------------*/
-@import "base/mixins";
-@import "base/placeholders";
-
+@import 'base/mixins';
+@import 'base/placeholders';
 
 /*-----SPRITES-------
 -----------------------*/
-@import "base/sprites";
-
-
+@import 'base/sprites';
 
 /*-----LAYOUTS-------
 -----------------------*/
-@import "layouts/header";
-@import "layouts/footer";
-@import "layouts/body";
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/body';
 
 /*-----MODULES-------
 -----------------------*/
 
 /*-----GLOBALS--------
 --------------------------*/
-@import "base/globals";
+@import 'base/globals';
+@import 'base/sideNav';
 
 /*-----PAGES-------
 -----------------------*/
-@import "pages/index";
-@import "pages/home";
-@import "pages/marketplace";
-@import "pages/dashboard";
-@import "pages/holiday";
-@import "pages/data_designer";
-@import "pages/edit-entity";
-@import "pages/processes";
-@import "pages/process-designer";
-@import "base/sideNav";
-
+@import 'pages/index';
+@import 'pages/home';
+@import 'pages/marketplace';
+@import 'pages/dashboard';
+@import 'pages/holiday';
+@import 'pages/data_designer';
+@import 'pages/edit-entity';
+@import 'pages/processes';
+@import 'pages/process-designer';
+@import 'pages/walkthrough';

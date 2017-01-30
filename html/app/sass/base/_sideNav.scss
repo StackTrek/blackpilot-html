@@ -180,6 +180,10 @@
       left: 0px;
       z-index: 520;
       width: 100%;
+      &.visible{
+              visibility: visible !important;
+
+      }
 
       li {
         float: none;

@@ -659,6 +659,10 @@ a {
 // side-menu
 .content-holder {
   padding-top: 70px;
+
+  &.bottom-margin {
+    margin-bottom: 70px;
+  }
 }
 
 .top-menu {
@@ -667,8 +671,8 @@ a {
   color: #fff;
   padding: 20px;
   background-color: $navi;
-  height: 70px;
-  width: 1147px;
+  height: 71px;
+  width: 84%;
 
   img {
     padding: 2px;
@@ -844,7 +848,7 @@ a {
 .side-nav {
   position: fixed;
   width: 228px;
-  z-index: 999;
+  z-index: 99999;
   height: 100%;
 }
 
@@ -854,4 +858,33 @@ a {
 
 .dark-bordered {
   border-color: #999fa5 !important;
+}
+
+.goto-marketplace {
+  margin: 0 !important;
+  width: 170px;
+  border: none;
+  outline: none;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 !important;
+
+  &:hover, &:focus, &:active {
+    background: #888 !important;
+  }
+}
+
+.no-apps {
+  padding-left: 16px;
+}
+
+.green {
+  background-color: #64bf58;
+}
+
+.backtocategory {
+  i {
+    padding-right: 5px;
+  }
 }
