@@ -29,9 +29,9 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
-<div class="walkthrough-widget left-arrow step-1">
+<div class="walkthrough-widget left-arrow step-8">
  <div class="step-title">
-    <i>1</i> <span>SELECT THE APP TO CONFIGURE</span>
+    <i>8</i> <span>SELECT THE REQUESTOR</span>
  </div>
  <div class="step-content">
    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur doloremque qui sed voluptatum sint, eligendi non quidem eius sit, quam fugiat debitis officia amet aliquid beatae impedit sunt, excepturi alias!
@@ -40,10 +40,10 @@
    <a href="javascript:void(0)" class="btn-edit bg-blue">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
  </div>
 </div>
-<section class="dashboard">
+<section class="holiday">
   <div class="container">
     <div class="row">
-       <div class="side-nav">
+      <div class="side-nav">
   <div class="logo">
     <img src="img/icon-black.png" alt="">
   </div>
@@ -99,9 +99,8 @@
   <!-- sidemenu -->
 </div>
 
-
       <!-- left column -->
-      <div class="col-lg-offset-2 col-lg-10 clear-pad ">
+      <div class="col-lg-offset-2 col-lg-10 clear-pad content-holder">
         <div class="top-menu">
           <div class="row">
             <div class="col-md-3">
@@ -138,176 +137,127 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-12 content-holder">
+        <!-- top menu -->
+        <div class="wrap content-holder">
+          <ol class="breadcrumb">
+            <li><a href="javascript:void(0)">Home</a></li>
+            <li><a href="javascript:void(0)" class="active">Holiday Request</a></li>
+          </ol>
+          <h3>Holiday Request</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, incidunt.</p>
+          <!-- end top info -->
           <div class="row">
-            <!-- block -->
-            <div class="block no-margin">
-              <div class="row">
-                <div>
-                  <div class="col-md-10">
-                    <div class="board default-dash pull-left">
-                      Default Dashboard
-                      <a href="javascript:void(0)" class="btn btn-default bg-trans dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                      </ul>
+            <div class="steps-content clearfix">
+              <div class="col-md-4">
+                <div class="widget">
+                  <h5 class="blue">Holiday Request</h5>
+                  <h6 class="date">Tuesday - December 18, 2016 @ 2:10pm</h6>
+                  <p>Request Holiday with Approval</p>
+                </div>
+              </div>
+              <div class="col-md-2 clear-pad">
+                <div class="widget">
+                  <div class="step blue">
+                    <div class="col-md-3 clear-pad">
+                      <div class="step-num">1</div>
+                    </div>
+                    <div class="col-md-9 clear-pad">
+                      <div class="step-title">Request Holiday</div>
                     </div>
                   </div>
-                  <div class="col-md-2  btn-grps pull-right">
-                    <ul>
-                      <li>
-                        <a href="javascript:void(0)" class="btn bg-red"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-                      </li>
-                      <li>
-                        <a href="javascript:void(0)" class="btn bg-blue"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                      </li>
-                    </ul>
+                </div>
+              </div>
+              <div class="col-md-2 clear-pad ">
+                <div class="widget disabled">
+                  <div class="r-arrow">
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  </div>
+                  <div class="step dis-font no-pad">
+                    <div class="col-md-3 clear-pad">
+                      <div class="step-num">2</div>
+                    </div>
+                    <div class="col-md-9 clear-pad">
+                      <div class="step-title">Request Holiday</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="block">
-              <div class="row">
-                <div class="col-md-5 left-tab-info">
-                  <h3>My Task</h3>
-                  <p>Overview of all tasks across all applications.</p>
-                </div>
-                <div class="col-md-7 left-tab-info">
+            <div class="holiday-request-content clearfix">
+              <div class="col-md-9">
+                <div class="widget">
+                  <h4 class="blue">Holiday Request</h4>
+                  <h6 class="date">Waiting for your input. Please provide the following input.</h6>
                   <form action="">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search Data">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="start">Start</label>
+                        <div class="input-group ">
+                          <input type="text" class="date-select form-control" name="start" placeholder="MM/DD/YYYY" aria-describedby="basic-addon1">
+                          <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6 clear-pad">
-                      <div class="form-group">
-                        <select class="form-control" placeholder="Please select">
-                          <option value="">View due task today</option>
-                        </select>
-                        <span class="input-group-addon glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                      <div class="col-md-6">
+                        <label for="start">End</label>
+                        <div class="input-group">
+                          <input type="text" class="date-select form-control" name="start" placeholder="MM/DD/YYYY" aria-describedby="basic-addon1">
+                          <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                      <div class="col-md-12 holiday-table-request">
+                        <div class="form-group">
+                          <label for="">Requestor</label>
+                          <select class="form-control" placeholder="">
+                            <option value="" disabled selected>johndoe@me.com</option>
+                          </select>
+                          <span class="input-group-addon glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                        </div>
+                        <div class="form-group">
+                          <label for="">Status</label>
+                          <select class="form-control" placeholder="">
+                            <option value="" disabled selected>approve</option>
+                          </select>
+                          <span class="input-group-addon glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                        </div>
+                        <div class="form-group">
+                          <a href="javascript:void(0)" class="btn btn-std bg-blue">SUBMIT REQUEST</a>
+                          <a href="javascript:void(0)" class="btn btn-std bg-dark-grey">DISCARD</a>
+                        </div>
                       </div>
                     </div>
                   </form>
                 </div>
               </div>
-              <!-- first-row -->
-              <div class="row">
-                <div class="col-md-12">
-                  <table class="table table-striped">
-                    <!-- <tr> -->
-                    <th>NUMBER</th>
-                    <th>INFO</th>
-                    <th>PROCESS</th>
-                    <th>STEP</th>
-                    <th>ASSIGNED ON</th>
-                    <th>DUE DATE</th>
-                    <th>ACTIONS</th>
-                    <!-- </tr> -->
-                    <tr>
-                      <td>000-000-000</td>
-                      <td>Lorem ipsum dolor sit amet, consectetur...</td>
-                      <td>Holiday Request</td>
-                      <td>Request Holiday </td>
-                      <td>1 Hour Ago</td>
-                      <td>--</td>
-                      <td class="actions">
-                        <a href="javascript:void(0)" class="btn-edit bg-blue"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Open</a>
-                        <a href="javascript:void(0)" class="btn-edit bg-red"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>000-000-000</td>
-                      <td>Lorem ipsum dolor sit amet, consectetur...</td>
-                      <td>Holiday Request</td>
-                      <td>Request Holiday </td>
-                      <td>1 Hour Ago</td>
-                      <td>--</td>
-                      <td class="actions">
-                        <a href="javascript:void(0)" class="btn-edit bg-blue"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Open</a>
-                        <a href="javascript:void(0)" class="btn-edit bg-red"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>000-000-000</td>
-                      <td>Lorem ipsum dolor sit amet, consectetur...</td>
-                      <td>Holiday Request</td>
-                      <td>Request Holiday </td>
-                      <td>1 Hour Ago</td>
-                      <td>December 18, 2016</td>
-                      <td class="actions">
-                        <a href="javascript:void(0)" class="btn-edit bg-blue"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Open</a>
-                        <a href="javascript:void(0)" class="btn-edit bg-red"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
-                      </td>
-                    </tr>
-                  </table>
+              <!-- form -->
+              <div class="col-md-3">
+                <div class="widget history-widget">
+                  <h5 class="blue">History</h5>
+                  <p>You can view the changes logs here.</p>
+                  <div class="logs">
+                    <div class="log-title"> Process Started </div>
+                    <div class="log-info">
+                      <a href="javascript:void(0)" class="btn-blue-sm">started</a>
+                      <div class="author">by <span class="blue">Billy Yuen</span></div>
+                    </div>
+                    <p>a few seconds ago (12-18-2016 at 2:00pm)</p>
+                  </div>
+                  <div class="logs">
+                    <div class="log-title">
+                      Process Edited
+                    </div>
+                    <div class="log-info">
+                      <a href="javascript:void(0)" class="btn-blue-sm">started</a>
+                      <div class="author">by <span class="blue">Billy Yuen</span></div>
+                    </div>
+                    <p>a few seconds ago (12-18-2016 at 2:00pm)</p>
+                  </div>
                 </div>
               </div>
-              <!-- 2nd row -->
             </div>
-            <!-- end block -->
-            <div class="block">
-              <div class="row">
-                <div class="col-md-5 left-tab-info">
-                  <h3>Weekly Net Sales</h3>
-                  <p>Overview of all tasks across all applications.</p>
-                </div>
-                <div class="col-md-7 left-tab-info">
-                  <form action="">
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <select class="form-control" placeholder="All Stores">
-                          <option value="">All Stores</option>
-                        </select>
-                        <span class="input-group-addon glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <select class="form-control" placeholder="Please select">
-                          <option value="">January</option>
-                        </select>
-                        <span class="input-group-addon glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <select class="form-control" placeholder="Please select">
-                          <option value="">2015</option>
-                        </select>
-                        <span class="input-group-addon glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <!-- first-row -->
-              <div class="row">
-                <div class="col-md-12">
-                  <canvas id="myChart" width="100%" height="25px"></canvas>
-                </div>
-              </div>
-              <!-- 2nd row -->
-            </div>
-            <!-- end block -->
           </div>
+          <!-- row -->
         </div>
-        <!-- footer -->
-        <!-- <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6">
-              Copyright &copy;2014 BlackPilot. All Rights Reserved
-            </div>
-            <div class="col-lg-6">
-              <ul class="nav navbar-nav">
-                <li>About Us</li>
-                <li>Help</li>
-                <li>Contact</li>
-                <li>Fees</li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
+        <!-- wrap -->
       </div>
       <!-- right column -->
     </div>
