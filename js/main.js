@@ -1,1 +1,1 @@
-"use strict";$(function(){$(".date-select").datepicker({})});
+"use strict";$(function(){$(".date-select").datepicker({}),$(".control-button-trigger").each(function(){$(this).on("click",function(t){t.preventDefault(),$(".control-button-trigger").removeClass("active"),$(this).addClass("active");var e=$(this).attr("href");$(".control-properties").removeClass("open-this"),$(e).addClass("open-this")})})});
