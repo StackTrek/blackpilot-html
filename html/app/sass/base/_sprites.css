@@ -9,15 +9,21 @@ Icon classes can be used entirely standalone. They are named after their origina
 <img class="icon-home" />
 ```
 */
+.icon-a {
+  background-image: url(../img/sprites.png);
+  background-position: -304px -48px;
+  width: 22px;
+  height: 50px;
+}
 .icon-camera {
   background-image: url(../img/sprites.png);
-  background-position: 0px -228px;
+  background-position: -304px 0px;
   width: 48px;
   height: 48px;
 }
 .icon-environmen-white {
   background-image: url(../img/sprites.png);
-  background-position: -76px -152px;
+  background-position: 0px -152px;
   width: 76px;
   height: 76px;
 }
@@ -41,25 +47,25 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-landscape {
   background-image: url(../img/sprites.png);
-  background-position: -80px -228px;
+  background-position: -326px -48px;
   width: 24px;
   height: 24px;
 }
 .icon-money-white {
   background-image: url(../img/sprites.png);
-  background-position: 0px -152px;
+  background-position: 0px 0px;
   width: 76px;
   height: 76px;
 }
 .icon-money {
   background-image: url(../img/sprites.png);
-  background-position: 0px 0px;
+  background-position: -76px 0px;
   width: 76px;
   height: 76px;
 }
 .icon-picture {
   background-image: url(../img/sprites.png);
-  background-position: -48px -228px;
+  background-position: -304px -98px;
   width: 32px;
   height: 32px;
 }
@@ -89,13 +95,19 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-stat-white {
   background-image: url(../img/sprites.png);
-  background-position: -152px -76px;
+  background-position: -76px -152px;
   width: 76px;
   height: 76px;
 }
 .icon-stat {
   background-image: url(../img/sprites.png);
-  background-position: -76px 0px;
+  background-position: -152px -76px;
   width: 76px;
   height: 76px;
+}
+.icon-textarea {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -228px;
+  width: 50px;
+  height: 47px;
 }
