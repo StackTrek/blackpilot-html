@@ -188,7 +188,6 @@
 
             .more-icon {
               position: absolute;
-              border: 10px solid #f8f8f8;
               background-color: #f8f8f8;
               right: 0;
               top: 22px;
@@ -205,11 +204,14 @@
                   color: #3e3e3e;
                   background-color: #fff;
                   font-size: 40px;
-                  padding: 15px;
                   border: 1px solid $grey;
                   border-radius: 50%;
-                  left: -2px;
-                  position: relative;
+                  width: 70px;
+                  height: 70px;
+                  text-align: center;
+                  line-height: 70px;
+
+                  @include centerer(true, true);
                 }
               }
             }
@@ -379,7 +381,7 @@
 
       .disable {
         border-color: #ddd;
-        color: $off-white !important;
+        color: #ddd !important;
 
         // border-left: 3px solid transparent;
 
@@ -430,6 +432,8 @@
 
     .app-details {
       padding-left: 85px;
+
+      @include centerer(false, true);
 
       h3 {
         font-size: 12px !important;
@@ -499,6 +503,22 @@
   text-align: center;
   height: 76px;
   background-color: #d6e439;
+
+  &.red {
+    background-color: #ef0303;
+  }
+
+  &.blue {
+    background-color: #3ddcea;
+  }
+
+  &.pink {
+    background-color: #ff3caf;
+  }
+
+  &.purple {
+    background-color: #db7ddc;
+  }
 
   i {
     color: #fff;
