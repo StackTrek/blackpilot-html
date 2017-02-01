@@ -40,10 +40,9 @@
   .config {
     float: right;
     color: $light-font;
-    width: 277px;
+    width: 200px;
     height: 120vh;
     font-size: 13px;
-    margin-bottom: 100px;
     background-color: $navi;
 
     .nav-header {
@@ -72,6 +71,7 @@
           color: $light-font;
           background-color: $navi-drawer;
           border-right: 3px solid $blue !important;
+          padding-bottom: 4px;
         }
       }
 
@@ -102,7 +102,6 @@
     background-color: $navi-drawer;
     width: 600px;
     height: 120vh;
-    margin-bottom: 100px;
     color: #fff;
 
     .nav {
@@ -204,17 +203,18 @@
 
           .buttons-holder {
             button {
-              color: #888888;
+              color: #888888 !important;
               border: none;
               background-color: #fff;
               font-weight: bold;
               padding-top: 4px;
               padding-left: 10px;
+              width: auto;
               padding-right: 10px;
 
               &.btn-apply {
                 background-color: #64bf58;
-                color: #fff;
+                color: #fff !important;
               }
             }
           }
@@ -426,6 +426,7 @@ a.title-heading {
     background-color: transparent;
     font-size: 12px;
     color: #fff;
+    border: 1px #999fa5 solid;
   }
 
   .switch input {

@@ -13,4 +13,10 @@ $(function() {
 
       });
   });
+  $('.scroll-settings').slimScroll({
+      height:'110vh'
+  });
+  $('.scroll-settings-small').slimScroll({
+      height:'100vh'
+  });
 });

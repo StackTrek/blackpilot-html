@@ -2,6 +2,10 @@ body {
   font-family: $font;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 section {
   min-height: 100vh;
 }
@@ -813,11 +817,42 @@ a {
     border-radius: 0;
     border: none;
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #999fa5;
   }
 }
 
 .table {
+  &.table-white {
+    th {
+      border: 1px solid #ddd;
+      text-align: left;
+      border-top: none !important;
+    }
+
+    &.bordered {
+      td {
+        border: 1px solid #ddd;
+      }
+    }
+
+    tr {
+      border-top: 1px solid #ddd !important;
+      border: 1px solid #ddd;
+
+      td {
+        border-top: none !important;
+        vertical-align: middle !important;
+        border: 1px solid #ddd;
+        padding-bottom: 7px !important;
+        color: #343f4b !important;
+
+        &.actions {
+          width: 210px;
+        }
+      }
+    }
+  }
+
   th {
     border: 1px solid #999fa5;
     text-align: left;
@@ -839,6 +874,7 @@ a {
       vertical-align: middle !important;
       border: 1px solid #999fa5;
       padding-bottom: 7px !important;
+      color: #fff;
 
       &.actions {
         width: 210px;
@@ -886,7 +922,17 @@ a {
 }
 
 .backtocategory {
+  padding: 0 !important;
+  line-height: 37px;
+  width: 150px;
+  height: 37px;
+
   i {
     padding-right: 5px;
   }
+}
+
+input, select {
+  border-radius: 0 !important;
+  border-color: #999fa5 !important;
 }
