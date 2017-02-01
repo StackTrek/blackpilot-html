@@ -1,0 +1,700 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gulp Starter Kit</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Place favicon.ico in the root directory -->
+  
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr.js"></script>
+  <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.theme.min.css">
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+<section class="processes-designer">
+  <div class="container">
+    <div class="row">
+      <div class="side-nav">
+  <div class="logo">
+    <img src="img/icon-black.png" alt="">
+  </div>
+  <div class="side-menu">
+    <div class="navigation">
+      <ul>
+            <li class="has-sub">
+                  <a href="#">
+                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                    <i class="fa fa-plus-circle i-float" aria-hidden="true"></i> New Process
+                  </a>
+                  <ul>
+                        <li>
+                          <form action="">
+                            <div class="input-group">
+                              <input type="text" class="form-control dark-bordered" placeholder="Search Resources" aria-describedby="basic-addon1">
+                              <span class="dark-bordered input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+                            </div>
+                          </form>
+                        </li>
+                        <li><h5><i class="fa fa-cogs" aria-hidden="true"></i> Process Groups</h5></li>
+                        <li class="has-sub">
+                          <a href="">Holiday <i class="glyphicon glyphicon-menu-right" aria-hidden="true"></i></a>
+                            <ul>
+                              <li>
+                                <h5><i class="fa fa-cogs" aria-hidden="true"></i> Select Process</h5>
+                              </li>
+                              <li>
+                                <div class="col-md-2">
+                                  <i class="glyphicon glyphicon-check" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-10 details-wrap">
+                                  <h5 class="clear-marg">Holiday Request</h5>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, rem.
+                                    <br> <b>Version 1</b></p>
+                                </div>
+                              </li>
+                            </ul>
+                        </li>
+                      </li>
+                      <li><a href="#">Quality Management <i class="glyphicon glyphicon-menu-right" aria-hidden="true"></i></a></li>
+                      <li><a href="#">Finance <i class="glyphicon glyphicon-menu-right" aria-hidden="true"></i></a></li>
+                  </ul>
+              </li>
+              <li class="active"> <a href="dashboard.html"><i class="fa fa-user" aria-hidden="true"></i>Dashboard</a> </li>
+              <li> <a href="marketplace.html"><i class="fa fa-credit-card" aria-hidden="true"></i>Marketplace</a> </li>
+              <li> <a href="javascript:void(0)"><i class="fa fa-file-o" aria-hidden="true"></i>Portal Management</a> </li>
+              <li> <a href="javascript:void(0)"><i class="fa fa-comments-o" aria-hidden="true"></i>Help &amp; Support</a> </li>
+              <li> <a href="training.html"><i class="fa fa-life-ring" aria-hidden="true"></i>Black Pilot Training</a> </li>
+      </ul>
+    </div>
+  </div>
+  <!-- sidemenu -->
+</div>
+
+      <!-- left column -->
+      <div class="col-lg-offset-2 col-lg-10 clear-pad content-holder">
+        <div class="top-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="company-info">
+                <h5 class="clear-marg">Simulation Subscription</h5>
+                <p>Startup Garage</p>
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <form action="">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search Resources" aria-describedby="basic-addon1">
+                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <ul class="nav navbar-nav  pull-right">
+                <li><a href="javascript:void(0)"><i class="fa fa-bell" aria-hidden="true"></i><span class="badge">1</span></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-cog" aria-hidden="true"></i></a></li>
+                <li><a href="javascript:void(0)"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <div class="profile">
+                <div class="pic"> <img src="img/icon-black.png" class="img-responsive" alt=""> </div>
+                <div class="name">
+                  <h5 class="clear-marg">John Doe</h5> </div>
+                <div class="position"> Founder </div>
+                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+              </div>
+              <!-- profile -->
+            </div>
+          </div>
+        </div>
+        <!-- top menu -->
+        <!-- top info -->
+        <div class="col-lg-12 content-holder">
+          <div class="row info">
+            <div class="col-lg-6">
+              <div class="left-info">
+                <ol class="breadcrumb">
+                  <li><a href="javascript:void(0)">Home</a></li>
+                  <li><a href="javascript:void(0)" class="">Processes </a></li>
+                  <li><a href="javascript:void(0)" class="active"> Process Designer </a></li>
+                </ol>
+                <h1>Process Designer</h1>
+              </div>
+            </div>
+            <div class="col-lg-6"> </div>
+          </div>
+        </div>
+        <!-- top info -->
+        <div class="col-lg-12 clear-pad">
+          <div class="widget top-widget-designer">
+            <div class="row">
+              <div class="col-md-8">
+                <ul class="nav nav-pills">
+                  <li role="presentation"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Process Properties</a></li>
+                  <li role="presentation"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Activities and Steps</a></li>
+                  <li role="presentation"><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Variables</a></li>
+                  <li role="presentation">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Dropdown <span class="caret"></span>
+                      </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- //nav -->
+              </div>
+              <div class="btn-grps clearfix discard-top">
+                <div class="col-md-4 btn-content-container">
+                  <a href="javascript:void(0)" class="btn-process-design btn btn-disable">DISCARD</a>
+                  <a href="javascript:void(0)" class="btn-process-design btn btn-std bg-blue"><i class="fa fa-floppy-o" aria-hidden="true"></i>SAVE CHANGES</a>
+                </div>
+              </div>
+            </div>
+            <!-- //row -->
+          </div>
+          <!-- widget -->
+          <div class="setting-config-panel clearfix">
+            <div class="settings-tab config-tab-fade open">
+              <div class="config">
+                <div class="nav-header">
+                  Configuration Section <a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a>
+                </div>
+                <div class="list-group">
+                  <a href="#general-settings" class="active control-button-trigger title-heading list-group-item">General <br> <small>Overall Settings</small></a>
+                  <a href="#form-properties" class="title-heading control-button-trigger list-group-item">Form <br> <small>Form Settings</small></a>
+                </div>
+              </div>
+              <!-- main config -->
+              <div class="form-settings">
+                <ul class="nav nav-pills" data-tabs="tabs">
+                  <li class="active" role="presentation"><a data-toggle="tab" href="#settings">SETTINGS</a></li>
+                  <li role="presentation"><a data-toggle="tab" href="#view">VIEW</a></li>
+                  <li role="presentation"><a data-toggle="tab" href="#instructions">INSTRUCTIONS</a></li>
+                </ul>
+                <div class="tab-content clearfix">
+                  <div class="control-properties open-this general-settings" id="general-settings">
+                    <div class="settings">
+                      <div class="scroll-settings">
+                        <ul class="list-group">
+                          <form>
+                            <div class="list-group-head">
+                              <a href="javascript:void(0)">Control Properties</a>
+                            </div>
+                          </form>
+                        </ul>
+                        <div class="prop-item">
+                          <label for="">ID/Name</label>
+                          <input placeholder="Holiday Reason" type="text" class="form-control">
+                        </div>
+                        <div class="prop-item">
+                          <label for="">Label Text</label>
+                          <input placeholder="Holiday Reason" type="text" class="form-control">
+                        </div>
+                        <div class="prop-item">
+                          <label for="">Placeholder Text</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="prop-item">
+                          <label for="">Help Text</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="prop-item">
+                          <label for="">Default Value</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="prop-item">
+                          <label for="">Copy Value From Another Field</label>
+                          <input placeholder="Name/ID of the other field (e.g $fieldA)" type="text" class="form-control">
+                        </div>
+                        <div class="prop-item">
+                          Is Field Mandatory?
+                          <label class="switch">
+                            <input type="checkbox">
+                            <div class="slider round"></div>
+                          </label>
+                        </div>
+                        <div class="prop-item">
+                          Disable Control
+                          <label class="switch">
+                            <input type="checkbox" checked>
+                            <div class="slider round"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="control-properties form-properties " id="form-properties">
+                    <div class="settings">
+                      <div class="scroll-settings">
+                        <ul class="list-group">
+                          <form>
+                            <div class="list-group-head dark-thead">
+                              <a href="javascript:void(0)">Form Properties</a>
+                            </div>
+                            <div class="list-group-head">
+                              <a href="javascript:void(0)">Basic</a>
+                            </div>
+                          </form>
+                        </ul>
+                        <div class="basic-icons">
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-font" aria-hidden="true"></i>
+                            <p>Text</p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-text-width" aria-hidden="true"></i>
+                            <p>
+                              Text Area
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-bug" aria-hidden="true"></i>
+                            <p>
+                              Number
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-clone" aria-hidden="true"></i>
+                            <p>
+                              Multiselect
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <p>
+                              Password
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <p>
+                              Checkbox
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <p>
+                              Buttons
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                            <p>
+                              Switch
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            <p>
+                              Dropdown
+                            </p>
+                          </div>
+                        </div>
+                        <ul class="list-group">
+                          <form>
+                            <div class="list-group-head">
+                              <a href="javascript:void(0)">Advanced</a>
+                            </div>
+                          </form>
+                        </ul>
+                        <div class="basic-icons">
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <p>Lookup</p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <p>
+                              Datetime
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                            <p>
+                              File
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-calculator" aria-hidden="true"></i>
+                            <p>
+                              Expression
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-table" aria-hidden="true"></i>
+                            <p>
+                              Grid
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+                            <p>
+                              Explorer
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-text-width" aria-hidden="true"></i>
+                            <p>
+                              Text Editor
+                            </p>
+                          </div>
+                          <div class="icons" draggable="true">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                            <p>
+                              Viewer
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane active" id="settings">
+                    <div class="settings">
+                      <div class="scroll-settings-small">
+                        <ul class="list-group">
+                          <form>
+                            <div class="list-group-head">
+                              <a href="javascript:void(0)">General</a>
+                            </div>
+                            <li class="list-group-item">
+                              Disable Activity?
+                              <label class="switch">
+                                <input type="checkbox">
+                                <div class="slider round"></div>
+                              </label>
+                            </li>
+                            <li class="list-group-item">
+                              Hide History?
+                              <label class="switch">
+                                <input type="checkbox" checked>
+                                <div class="slider round"></div>
+                              </label>
+                            </li>
+                            <li class="list-group-item">
+                              Hide in task List?
+                              <label class="switch">
+                                <input type="checkbox" checked>
+                                <div class="slider round"></div>
+                              </label>
+                            </li>
+                            <li class="list-group-item display-info-field">
+                              <label for="">Display information for task list</label>
+                              <input type="text" class="form-control">
+                            </li>
+                            <div class="list-group-head">
+                              <a href="javascript:void(0)">Owners</a>
+                            </div>
+                            <li class="list-group-item">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  User Groups
+                                  <br>
+                                  <a href="javascript:void(0)" class="btn btn-add-variables btn-menu bg-light-grey"><i class="fa fa-plus" aria-hidden="true"></i>Add User Groups</a>
+                                  <a href="javascript:void(0)" class="btn btn-add-variables btn-menu bg-light-grey"><i class="fa fa-plus" aria-hidden="true"></i>Add Variable</a>
+                                </div>
+                                <div class="col-md-6">
+                                  Users
+                                  <br>
+                                  <a href="javascript:void(0)" class="btn btn-add-variables btn-menu bg-light-grey"><i class="fa fa-plus" aria-hidden="true"></i>Add User Groups</a>
+                                  <a href="javascript:void(0)" class="btn btn-add-variables btn-menu bg-light-grey"><i class="fa fa-plus" aria-hidden="true"></i>Add Variable</a>
+                                </div>
+                              </div>
+                            </li>
+                            <div class="list-group-head">
+                              <a href="javascript:void(0)">Actions</a>
+                            </div>
+                          </form>
+                          <li class="list-group-item">
+                            <table class="table bordered">
+                              <tr>
+                                <th>&nbsp;</th>
+                                <th>PREVIEW</th>
+                                <th>ACTIONS</th>
+                                <th>OUTCOME</th>
+                                <th>ACTION</th>
+                              </tr>
+                              <tr>
+                                <td> <a href="" class="btn btn-trash bg-red"><i class="fa fa-trash" aria-hidden="true"></i></a> </td>
+                                <td>
+                                  <a href="javascript:void(0)" class="btn btn-menu bg-light-grey">
+                            Request Holiday
+                          </a>
+                                </td>
+                                <td>Save</td>
+                                <td>Request Holiday</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="btn btn-menu bg-blue white">
+                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td> <a href="" class="btn btn-trash bg-red"><i class="fa fa-trash" aria-hidden="true"></i></a> </td>
+                                <td>
+                                  <a href="javascript:void(0)" class="btn btn-menu bg-light-grey">
+                            Request Holiday
+                          </a>
+                                </td>
+                                <td>--</td>
+                                <td>Request Holiday</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="btn btn-menu bg-blue white">
+                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td> <a href="" class="btn btn-trash bg-red"><i class="fa fa-trash" aria-hidden="true"></i></a> </td>
+                                <td>
+                                  <a href="javascript:void(0)" class="btn btn-menu bg-light-grey">
+                            Request Holiday
+                          </a>
+                                </td>
+                                <td>--</td>
+                                <td>Request Holiday</td>
+                                <td>
+                                  <a href="javascript:void(0)" class="btn btn-menu bg-blue white">
+                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- list-group -->
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="view">
+                    <div class="settings">
+                      <ul class="list-group">
+                        <form>
+                          <div class="list-group-head">
+                            <a href="javascript:void(0)">Your View <span>(Drag items from the left into the content area below)</span></a>
+                          </div>
+                          <li class="clearfix list-group-item">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <label for="start">Start Time</label>
+                                <div class="input-group ">
+                                  <input type="text" class="date-select form-control" name="start" placeholder="MM/DD/YYYY" aria-describedby="basic-addon1">
+                                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <label for="start">End Time</label>
+                                <div class="input-group">
+                                  <input type="text" class="date-select form-control" name="start" placeholder="MM/DD/YYYY" aria-describedby="basic-addon1">
+                                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="clearfix list-group-item">
+                            <div class="form-group">
+                              <label for="">Requestor</label>
+                              <select class="form-control" placeholder="">
+                                <option value="" disabled selected>johndoe@me.com</option>
+                              </select>
+                              <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                            </div>
+                          </li>
+                          <li class="clearfix list-group-item">
+                            <div class="form-group">
+                              <label for="">Holiday Reason</label>
+                              <textarea></textarea>
+                            </div>
+                          </li>
+                          <li class="clearfix list-group-item">
+                            <div class="buttons-holder">
+                              <button class="btn btn-menu "><i class="fa fa-bars" aria-hidden="true"></i> Generate From Data</button>
+                              <button class="btn btn-menu " ><i class="fa fa-trash" aria-hidden="true"></i> Clear View</button>
+                              <button class="btn btn-menu  btn-apply pull-right"><i class="fa fa-check" aria-hidden="true"></i> Apply Changes</button>
+                            </div>
+                          </li>
+                      </ul>
+                      <!-- list-group -->
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="instructions">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magnam, expedita mollitia, tempore facere ex reprehenderit rem natus vero suscipit facilis architecto sint, error eius exercitationem quod quas dolores doloremque.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right column -->
+    </div>
+  </div>
+</section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-offset-2 col-lg-10 foot-wrap">
+          <div class="col-lg-4 copy">
+              Copyright &copy;2014 BlackPilot. All Rights Reserved
+            </div>
+            <div class="col-lg-8 links">
+              <ul class="nav navbar-nav">
+                <li><a href="javascript:void(0)">About Us</a></li>
+                <li><a href="javascript:void(0)">Help</a></li>
+                <li><a href="javascript:void(0)">Contact</a></li>
+                <li><a href="javascript:void(0)">Fees</a></li>
+                <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+                <li><a href="javascript:void(0)">Privacy</a></li>
+                <li><a href="javascript:void(0)">Legal</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+
+  </script>
+
+  <script src="js/vendor.js"></script>
+
+  <script src="js/plugins.js"></script>
+      <script src="plugins/jquery-ui/jquery-ui.js"></script>
+
+  <script src="js/main.js"></script>
+  <!-- configuration settings on process-designer.html -->
+  <script>
+    // function formSettings() {
+    //   document.getElementById('form-settings').style.display = "block";
+    // }
+    $( document ).ready(function() {
+        console.log( "ready!" );
+        function formSettings() {
+          document.getElementById('form-settings').style.display = "block";
+        }
+        // $('html').click(function() {
+        //   $('#form-settings').hide();
+        //  })
+
+        //  $('#config').click(function(e){
+        //      e.stopPropagation();
+        //  });
+
+        // $('#formMenu').click(function(e) {
+        //  $('#form-settings').toggle();
+        //  });
+    });
+
+  </script>
+  <!-- chart -->
+  <script>
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["Jan 1 - Mon", "Jan 2 - Tue", "Jan 3 - Wed", "Jan 4 - Thu", "Jan 5 - Fri", "Jan 6 - Sat", "Jan 8 - Sun"],
+            datasets: [
+                {
+                  type: 'bar',
+                  label: 'John Doe',
+                  backgroundColor: [
+                      'rgba(255, 132, 158, 0.8)',
+                      'rgba(255, 132, 158, 0.8)',
+                      'rgba(255, 132, 158, 0.8)',
+                      'rgba(255, 132, 158, 0.8)',
+                      'rgba(255, 132, 158, 0.8)',
+                      'rgba(255, 132, 158, 0.8)',
+                      'rgba(255, 132, 158, 0.8)'
+                  ],
+                  borderColor: [
+                      'rgba(255, 128, 155,1)',
+                      'rgba(255, 128, 155, 1)',
+                      'rgba(255, 128, 155, 1)',
+                      'rgba(255, 128, 155, 1)',
+                      'rgba(255, 128, 155, 1)',
+                      'rgba(255, 128, 155, 1)',
+                      'rgba(255, 128, 155, 1)'
+                  ],
+                  borderWidth: 1,
+                  data: [10, 20, 30, 5, 13, 25, 23],
+                },
+                {
+                  type: 'bar',
+                  label: 'Mark Nirew',
+                  data: [12, 18, 29, 30, 12, 24, 12],
+                  backgroundColor: [
+                      'rgba(252, 214, 122, 0.8)',
+                      'rgba(252, 214, 122, 0.8)',
+                      'rgba(252, 214, 122, 0.8)',
+                      'rgba(252, 214, 122, 0.8)',
+                      'rgba(252, 214, 122, 0.8)',
+                      'rgba(252, 214, 122, 0.8)',
+                      'rgba(252, 214, 122, 0.8)'
+                  ],
+                  borderColor: [
+                      'rgba(251, 200, 80,1)',
+                      'rgba(251, 200, 80, 1)',
+                      'rgba(251, 200, 80, 1)',
+                      'rgba(251, 200, 80, 1)',
+                      'rgba(251, 200, 80, 1)',
+                      'rgba(251, 200, 80, 1)',
+                      'rgba(251, 200, 80, 1)'
+                  ],
+                  borderWidth: 1,
+                },
+                {
+                  type: 'bar',
+                  label: 'Alden Williams',
+                  data: [9, 21, 28, 18, 29, 30, 24],
+                  backgroundColor: [
+                      'rgba(75, 192, 192, 0.8)',
+                      'rgba(75, 192, 192, 0.8)',
+                      'rgba(75, 192, 192, 0.8)',
+                      'rgba(75, 192, 192, 0.8)',
+                      'rgba(75, 192, 192, 0.8)',
+                      'rgba(75, 192, 192, 0.8)',
+                      'rgba(75, 192, 192, 0.8)'
+                  ],
+                  borderColor: [
+                      'rgba(60, 170, 170,1)',
+                      'rgba(60, 170, 170, 1)',
+                      'rgba(60, 170, 170, 1)',
+                      'rgba(60, 170, 170, 1)',
+                      'rgba(60, 170, 170, 1)',
+                      'rgba(60, 170, 170, 1)',
+                      'rgba(60, 170, 170, 1)'
+                  ],
+                  borderWidth: 1,
+                  // data: [65, 59, 80, 81, 56, 55, 40,1000],
+                }
+            ]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+  </script>
+  <!-- end chart -->
+
+</body>
+
