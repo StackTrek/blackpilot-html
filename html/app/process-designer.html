@@ -175,134 +175,258 @@
           </div>
           <!-- widget -->
           <div class="setting-config-panel clearfix">
-            <div class="config">
-              <div class="nav-header">
-                Configuration Section <a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a>
+            <div class="settings-tab config-tab-fade open">
+              <div class="config">
+                <div class="nav-header">
+                  Configuration Section <a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a>
+                </div>
+                <div class="list-group">
+                  <a href="#general-settings" class="active control-button-trigger title-heading list-group-item">General <br> <small>Overall Settings</small></a>
+                  <a href="#form-properties" class="title-heading control-button-trigger list-group-item">Form <br> <small>Form Settings</small></a>
+                </div>
               </div>
-              <div class="list-group">
-                <a href="" onclick="general()" class="title-heading list-group-item">General <br> <small>Overall Settings</small></a>
-                <a href="" onclick="formSettings()" id="formMenu" type="button" class="title-heading list-group-item">Form <br> <small>Form Settings</small></a>
-              </div>
-            </div>
-            <!-- main config -->
-            <div id="form-settings" class="form-settings">
-              <ul class="nav nav-pills">
-                <li class="active" role="presentation"><a href="#">SETTINGS</a></li>
-                <li role="presentation"><a href="#">VIEW</a></li>
-                <li role="presentation"><a href="#">INSTRUCTIONS</a></li>
-              </ul>
-              <div id="settings" class="settings">
-                <ul class="list-group">
-                  <form>
-                    <div class="list-group-head">
-                      <a href="javascript:void(0)">General</a>
-                    </div>
-                    <li class="list-group-item">
-                      Disable Activity?
-                      <label class="switch">
-                        <input type="checkbox">
-                        <div class="slider round"></div>
-                      </label>
-                    </li>
-                    <li class="list-group-item">
-                      Hide History?
-                      <label class="switch">
-                        <input type="checkbox" checked>
-                        <div class="slider round"></div>
-                      </label>
-                    </li>
-                    <li class="list-group-item">
-                      Hide in task List?
-                      <label class="switch">
-                        <input type="checkbox" checked>
-                        <div class="slider round"></div>
-                      </label>
-                    </li>
-                    <li class="list-group-item display-info-field">
-                      <label for="">Display information for task list</label>
-                      <input type="text" class="form-control">
-                    </li>
-                    <div class="list-group-head">
-                      <a href="javascript:void(0)">Owners</a>
-                    </div>
-                    <li class="list-group-item">
-                      <div class="row">
-                        <div class="col-md-6">
-                          User Groups
-                          <br>
-                          <a href="javascript:void(0)" class="btn btn-add-variables btn-menu bg-light-grey"><i class="fa fa-plus" aria-hidden="true"></i>Add User Groups</a>
-                          <a href="javascript:void(0)" class="btn btn-add-variables btn-menu bg-light-grey"><i class="fa fa-plus" aria-hidden="true"></i>Add Variable</a>
-                        </div>
-                        <div class="col-md-6">
-                          Users
-                          <br>
-                          <a href="javascript:void(0)" class="btn btn-add-variables btn-menu bg-light-grey"><i class="fa fa-plus" aria-hidden="true"></i>Add User Groups</a>
-                          <a href="javascript:void(0)" class="btn btn-add-variables btn-menu bg-light-grey"><i class="fa fa-plus" aria-hidden="true"></i>Add Variable</a>
-                        </div>
-                      </div>
-                    </li>
-                    <div class="list-group-head">
-                      <a href="javascript:void(0)">Actions</a>
-                    </div>
-                  </form>
-                  <li class="list-group-item">
-                    <table class="table bordered">
-                      <tr>
-                        <th>&nbsp;</th>
-                        <th>PREVIEW</th>
-                        <th>ACTIONS</th>
-                        <th>OUTCOME</th>
-                        <th>ACTION</th>
-                      </tr>
-                      <tr>
-                        <td> <a href="" class="btn btn-trash bg-red"><i class="fa fa-trash" aria-hidden="true"></i></a> </td>
-                        <td>
-                          <a href="javascript:void(0)" class="btn btn-menu bg-light-grey">
-                            Request Holiday
-                          </a>
-                        </td>
-                        <td>Save</td>
-                        <td>Request Holiday</td>
-                        <td>
-                          <a href="javascript:void(0)" class="btn btn-menu bg-blue white">
-                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td> <a href="" class="btn btn-trash bg-red"><i class="fa fa-trash" aria-hidden="true"></i></a> </td>
-                        <td>
-                          <a href="javascript:void(0)" class="btn btn-menu bg-light-grey">
-                            Request Holiday
-                          </a>
-                        </td>
-                        <td>--</td>
-                        <td>Request Holiday</td>
-                        <td>
-                          <a href="javascript:void(0)" class="btn btn-menu bg-blue white">
-                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td> <a href="" class="btn btn-trash bg-red"><i class="fa fa-trash" aria-hidden="true"></i></a> </td>
-                        <td>
-                          <a href="javascript:void(0)" class="btn btn-menu bg-light-grey">
-                            Request Holiday
-                          </a>
-                        </td>
-                        <td>--</td>
-                        <td>Request Holiday</td>
-                        <td>
-                          <a href="javascript:void(0)" class="btn btn-menu bg-blue white">
-                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
-                  </li>
+              <!-- main config -->
+              <div class="form-settings">
+                <ul class="nav nav-pills" data-tabs="tabs">
+                  <li class="active" role="presentation"><a data-toggle="tab" href="#settings">SETTINGS</a></li>
+                  <li role="presentation"><a data-toggle="tab" href="#view">VIEW</a></li>
+                  <li role="presentation"><a data-toggle="tab" href="#instructions">INSTRUCTIONS</a></li>
                 </ul>
-                <!-- list-group -->
+                <div class="tab-content clearfix">
+                  <div class="control-properties open-this general-settings" id="general-settings">
+                    <div class="settings">
+                      <ul class="list-group">
+                        <form>
+                          <div class="list-group-head">
+                            <a href="javascript:void(0)">Control Properties</a>
+                          </div>
+                        </form>
+                      </ul>
+                      <div class="prop-item">
+                        <label for="">ID/Name</label>
+                        <input placeholder="Holiday Reason" type="text" class="form-control">
+                      </div>
+                      <div class="prop-item">
+                        <label for="">Label Text</label>
+                        <input placeholder="Holiday Reason" type="text" class="form-control">
+                      </div>
+                      <div class="prop-item">
+                        <label for="">Placeholder Text</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="prop-item">
+                        <label for="">Help Text</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="prop-item">
+                        <label for="">Default Value</label>
+                        <input type="text" class="form-control">
+                      </div>
+                      <div class="prop-item">
+                        <label for="">Copy Value From Another Field</label>
+                        <input placeholder="Name/ID of the other field (e.g $fieldA)" type="text" class="form-control">
+                      </div>
+                      <div class="prop-item">
+                        Is Field Mandatory?
+                        <label class="switch">
+                          <input type="checkbox">
+                          <div class="slider round"></div>
+                        </label>
+                      </div>
+                      <div class="prop-item">
+                        Disable Control
+                        <label class="switch">
+                          <input type="checkbox" checked>
+                          <div class="slider round"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="control-properties form-properties " id="form-properties">
+                    <div class="settings">
+                      <ul class="list-group">
+                        <form>
+                          <div class="list-group-head dark-thead">
+                            <a href="javascript:void(0)">Form Properties</a>
+                          </div>
+                           <div class="list-group-head">
+                            <a href="javascript:void(0)">Basic</a>
+                          </div>
+                        </form>
+                      </ul>
+                      <!-- list-group -->
+                    </div>
+                  </div>
+                  <div class="tab-pane active" id="settings">
+                    <div class="settings">
+                      <ul class="list-group">
+                        <form>
+                          <div class="list-group-head">
+                            <a href="javascript:void(0)">General</a>
+                          </div>
+                          <li class="list-group-item">
+                            Disable Activity?
+                            <label class="switch">
+                              <input type="checkbox">
+                              <div class="slider round"></div>
+                            </label>
+                          </li>
+                          <li class="list-group-item">
+                            Hide History?
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <div class="slider round"></div>
+                            </label>
+                          </li>
+                          <li class="list-group-item">
+                            Hide in task List?
+                            <label class="switch">
+                              <input type="checkbox" checked>
+                              <div class="slider round"></div>
+                            </label>
+                          </li>
+                          <li class="list-group-item display-info-field">
+                            <label for="">Display information for task list</label>
+                            <input type="text" class="form-control">
+                          </li>
+                          <div class="list-group-head">
+                            <a href="javascript:void(0)">Owners</a>
+                          </div>
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-6">
+                                User Groups
+                                <br>
+                                <a href="javascript:void(0)" class="btn btn-add-variables btn-menu bg-light-grey"><i class="fa fa-plus" aria-hidden="true"></i>Add User Groups</a>
+                                <a href="javascript:void(0)" class="btn btn-add-variables btn-menu bg-light-grey"><i class="fa fa-plus" aria-hidden="true"></i>Add Variable</a>
+                              </div>
+                              <div class="col-md-6">
+                                Users
+                                <br>
+                                <a href="javascript:void(0)" class="btn btn-add-variables btn-menu bg-light-grey"><i class="fa fa-plus" aria-hidden="true"></i>Add User Groups</a>
+                                <a href="javascript:void(0)" class="btn btn-add-variables btn-menu bg-light-grey"><i class="fa fa-plus" aria-hidden="true"></i>Add Variable</a>
+                              </div>
+                            </div>
+                          </li>
+                          <div class="list-group-head">
+                            <a href="javascript:void(0)">Actions</a>
+                          </div>
+                        </form>
+                        <li class="list-group-item">
+                          <table class="table bordered">
+                            <tr>
+                              <th>&nbsp;</th>
+                              <th>PREVIEW</th>
+                              <th>ACTIONS</th>
+                              <th>OUTCOME</th>
+                              <th>ACTION</th>
+                            </tr>
+                            <tr>
+                              <td> <a href="" class="btn btn-trash bg-red"><i class="fa fa-trash" aria-hidden="true"></i></a> </td>
+                              <td>
+                                <a href="javascript:void(0)" class="btn btn-menu bg-light-grey">
+                            Request Holiday
+                          </a>
+                              </td>
+                              <td>Save</td>
+                              <td>Request Holiday</td>
+                              <td>
+                                <a href="javascript:void(0)" class="btn btn-menu bg-blue white">
+                                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td> <a href="" class="btn btn-trash bg-red"><i class="fa fa-trash" aria-hidden="true"></i></a> </td>
+                              <td>
+                                <a href="javascript:void(0)" class="btn btn-menu bg-light-grey">
+                            Request Holiday
+                          </a>
+                              </td>
+                              <td>--</td>
+                              <td>Request Holiday</td>
+                              <td>
+                                <a href="javascript:void(0)" class="btn btn-menu bg-blue white">
+                                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td> <a href="" class="btn btn-trash bg-red"><i class="fa fa-trash" aria-hidden="true"></i></a> </td>
+                              <td>
+                                <a href="javascript:void(0)" class="btn btn-menu bg-light-grey">
+                            Request Holiday
+                          </a>
+                              </td>
+                              <td>--</td>
+                              <td>Request Holiday</td>
+                              <td>
+                                <a href="javascript:void(0)" class="btn btn-menu bg-blue white">
+                                  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Edit
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </li>
+                      </ul>
+                      <!-- list-group -->
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="view">
+                    <div class="settings">
+                      <ul class="list-group">
+                        <form>
+                          <div class="list-group-head">
+                            <a href="javascript:void(0)">Your View <span>(Drag items from the left into the content area below)</span></a>
+                          </div>
+                          <li class="clearfix list-group-item">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <label for="start">Start Time</label>
+                                <div class="input-group ">
+                                  <input type="text" class="date-select form-control" name="start" placeholder="MM/DD/YYYY" aria-describedby="basic-addon1">
+                                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <label for="start">End Time</label>
+                                <div class="input-group">
+                                  <input type="text" class="date-select form-control" name="start" placeholder="MM/DD/YYYY" aria-describedby="basic-addon1">
+                                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="clearfix list-group-item">
+                            <div class="form-group">
+                              <label for="">Requestor</label>
+                              <select class="form-control" placeholder="">
+                                <option value="" disabled selected>johndoe@me.com</option>
+                              </select>
+                              <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                            </div>
+                          </li>
+                          <li class="clearfix list-group-item">
+                            <div class="form-group">
+                              <label for="">Holiday Reason</label>
+                              <textarea></textarea>
+                            </div>
+                          </li>
+                          <li class="clearfix list-group-item">
+                            <div class="buttons-holder">
+                              <button><i class="fa fa-bars" aria-hidden="true"></i> Generate From Data</button>
+                              <button><i class="fa fa-trash" aria-hidden="true"></i> Clear View</button>
+                              <button class="btn-apply pull-right"><i class="fa fa-check" aria-hidden="true"></i> Apply Changes</button>
+                            </div>
+                          </li>
+                      </ul>
+                      <!-- list-group -->
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="instructions">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae magnam, expedita mollitia, tempore facere ex reprehenderit rem natus vero suscipit facilis architecto sint, error eius exercitationem quod quas dolores doloremque.
+                  </div>
+                </div>
               </div>
             </div>
           </div>

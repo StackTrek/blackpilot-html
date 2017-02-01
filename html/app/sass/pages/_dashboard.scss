@@ -71,25 +71,6 @@
     }
   }
 
-  table {
-    th {
-      border: 1px solid #dcdfe2;
-      text-align: left !important;
-    }
-
-    tr {
-      font-size: 12px;
-
-      td {
-        border: 1px solid #dcdfe2;
-
-        &:last-child() {
-          text-align: center !important;
-        }
-      }
-    }
-  }
-
   //table
   .vertical {
     display: inline-block;

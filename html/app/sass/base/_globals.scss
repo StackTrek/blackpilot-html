@@ -112,12 +112,14 @@ a {
       border-left: none !important;
       border-top-right-radius: 0px;
       border-bottom-right-radius: 0px;
+      border-color: #999fa5;
     }
 
     select {
       position: relative;
       -webkit-appearance: none;
       -webkit-border-radius: 0px;
+      border-color: #999fa5;
     }
 
     .form-group {
@@ -802,7 +804,7 @@ a {
 .input-group {
   input {
     box-shadow: none;
-    border: 1px solid #ddd;
+    border: 1px solid #999fa5;
     border-right: none;
   }
 
