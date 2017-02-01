@@ -67,6 +67,14 @@
       background-color: $navi;
       font-size: 13px;
 
+      a {
+        &.active {
+          color: $light-font;
+          background-color: $navi-drawer;
+          border-right: 3px solid $blue !important;
+        }
+      }
+
       .list-group-item {
         background-color: $navi;
         border: 3px solid transparent;
@@ -105,6 +113,13 @@
         padding-left: 10px;
         height: 50px;
 
+        &.active {
+          a {
+            background-color: transparent;
+            border-bottom: 2px solid $blue;
+          }
+        }
+
         a {
           color: #fff;
           border-radius: 0px;
@@ -135,6 +150,12 @@
           padding: 20px 10px 20px 25px;
           background-color: $navi-sub-header;
           color: $light-font;
+
+          span {
+            color: #bbbbbb;
+            font-weight: normal;
+            font-size: 12px;
+          }
         }
 
         // .list-group-item:hover, .list-group-item:active{
@@ -151,6 +172,61 @@
           padding-right: 20px;
           color: #fff;
           font-size: 13px;
+
+          .input-group {
+            input {
+              border-radius: 0 !important;
+            }
+          }
+
+          select {
+            position: relative;
+            -webkit-appearance: none;
+            -webkit-border-radius: 0px;
+            background: transparent;
+            color: #fff;
+            border-color: #999fa5;
+          }
+
+          textarea {
+            width: 100%;
+            background-color: transparent;
+            min-height: 200px;
+            border: 1px solid #999fa5;
+            resize: none;
+          }
+
+          .glyphicon {
+            top: 35px;
+            right: 10px;
+            position: absolute;
+          }
+
+          .buttons-holder {
+            button {
+              color: #888888;
+              border: none;
+              background-color: #fff;
+              font-weight: bold;
+              padding-top: 4px;
+              padding-left: 10px;
+              padding-right: 10px;
+
+              &.btn-apply {
+                background-color: #64bf58;
+                color: #fff;
+              }
+            }
+          }
+
+          .input-group-addon {
+            color: #999fa5;
+            background-color: #3d4957 !important;
+            border-left: none !important;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-color: #999fa5;
+          }
 
           &:hover {
             background-color: $navi-drawer;
@@ -304,4 +380,104 @@ a.title-heading {
   font-size: 14px;
   color: #fff;
   font-weight: bold;
+}
+
+.control-properties {
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 0;
+  background-color: #3d4957;
+  width: 240px;
+  height: 112.5vh;
+  opacity: 0;
+  -webkit-box-shadow: inset -4px 0px 5px -2px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: inset -4px 0px 5px -2px rgba(0, 0, 0, 0.46);
+  box-shadow: inset -4px 0px 5px -2px rgba(0, 0, 0, 0.46);
+
+  &.open-this {
+    left: -240px;
+    opacity: 1;
+  }
+
+  .list-group-head {
+    -webkit-box-shadow: inset -4px 0px 5px -2px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: inset -4px 0px 5px -2px rgba(0, 0, 0, 0.46);
+    box-shadow: inset -4px 0px 5px -2px rgba(0, 0, 0, 0.46);
+  }
+}
+
+.dark-thead {
+  background-color: #2a323c !important;
+}
+
+.prop-item {
+  padding: 10px;
+  margin: 5px 0;
+
+  .label {
+    font-size: 12px;
+  }
+
+  input {
+    background-color: transparent;
+    font-size: 12px;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    width: 25% !important;
+    top: 5px;
+    right: 20px;
+    bottom: 11px;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 16px;
+
+    // top: ;
+    left: 4px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+
+    // background-color: transparent;
+    // border: 1px solid #dcdfe2;
+
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
 }
