@@ -399,6 +399,10 @@ a.title-heading {
     opacity: 1;
   }
 
+  .list-group {
+    margin-bottom: 0;
+  }
+
   .list-group-head {
     -webkit-box-shadow: inset -4px 0px 5px -2px rgba(0, 0, 0, 0.46);
     -moz-box-shadow: inset -4px 0px 5px -2px rgba(0, 0, 0, 0.46);
@@ -421,6 +425,7 @@ a.title-heading {
   input {
     background-color: transparent;
     font-size: 12px;
+    color: #fff;
   }
 
   .switch input {
@@ -479,5 +484,27 @@ a.title-heading {
 
   .slider.round:before {
     border-radius: 50%;
+  }
+}
+
+.basic-icons, .advance-icons {
+  padding: 15px;
+  background: transparent;
+
+  .icons {
+    cursor: pointer;
+    display: inline-block;
+    width: 28%;
+    text-align: center;
+    margin: 3px;
+    margin-bottom: 10px;
+
+    p {
+      padding-top: 15px;
+    }
+
+    i {
+      font-size: 23px;
+    }
   }
 }
